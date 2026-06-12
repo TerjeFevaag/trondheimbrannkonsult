@@ -86,9 +86,18 @@ const faqItems = [
 export default function HomePage() {
   return (
     <>
-      {/* ── Hero — dark typographic, NO background image ── */}
-      <section className="bg-brand-dark py-24 lg:py-36">
-        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── Hero — city image background ── */}
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden -mt-20 lg:-mt-24">
+        <Image
+          src="/images/hero.jpg"
+          alt="Trondheim by"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-brand-dark/20" />
+        <div className="relative z-10 w-full max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-24 lg:pt-48 lg:pb-32">
           <p className="hero-1 font-accent text-brand-orange text-xl mb-4">Trondheim Brannkonsult</p>
           <h1 className="hero-2 text-brand-white font-black leading-none mb-6 text-5xl lg:text-7xl xl:text-8xl max-w-4xl">
             Brann&shy;prosjektering i Trondheim
@@ -107,20 +116,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* City image immediately below hero */}
-      <ScrollReveal variant="scale">
-        <div className="relative w-full h-72 lg:h-[480px] overflow-hidden">
-          <Image
-            src="/images/hero.jpg"
-            alt="Trondheim by"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-        </div>
-      </ScrollReveal>
 
       {/* ── Services — zigzag layout ── */}
       <section className="py-16 lg:py-24 bg-brand-white">
@@ -225,9 +220,7 @@ export default function HomePage() {
             </p>
           </ScrollReveal>
           <ScrollReveal delay={80} variant="fade">
-            <div className="max-w-3xl">
-              <FAQAccordion items={faqItems} dark={true} />
-            </div>
+            <FAQAccordion items={faqItems} dark={true} />
           </ScrollReveal>
         </div>
       </section>

@@ -24,7 +24,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-brand-white shadow-md' : 'bg-brand-dark'}`}>
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-brand-white shadow-md' : 'bg-brand-dark border-b-2 border-brand-orange/40'}`}>
       <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           <Link href="/">
@@ -36,14 +36,15 @@ export default function Navbar() {
               priority
             />
           </Link>
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-7">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}
-                className={`text-sm font-medium hover:text-brand-orange transition-colors ${scrolled ? 'text-brand-black' : 'text-brand-white'}`}>
+                className={`uppercase text-[11px] tracking-widest font-bold hover:text-brand-orange transition-colors ${scrolled ? 'text-brand-black' : 'text-brand-white'}`}>
                 {link.label}
               </Link>
             ))}
-            <Link href="/kontakt-oss" className="bg-brand-orange text-brand-white font-bold px-5 py-2.5 rounded-[10px] hover:opacity-90 transition-opacity text-sm">
+            <Link href="/kontakt-oss"
+              className="bg-brand-orange text-brand-white font-bold px-5 py-2.5 rounded-[10px] hover:opacity-90 transition-opacity text-sm ml-2">
               Kontakt oss
             </Link>
           </div>
@@ -54,10 +55,10 @@ export default function Navbar() {
         </div>
       </div>
       {mobileOpen && (
-        <div className="lg:hidden bg-brand-white border-t border-brand-gray">
+        <div className="lg:hidden bg-brand-dark border-t border-brand-white/10">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} onClick={() => setMobileOpen(false)}
-              className="block px-6 py-3.5 text-brand-black hover:text-brand-orange hover:bg-brand-lightgray font-medium transition-colors border-b border-brand-gray">
+              className="block px-6 py-4 text-brand-white uppercase text-[11px] tracking-widest font-bold hover:text-brand-orange hover:bg-brand-white/5 transition-colors border-b border-brand-white/10">
               {link.label}
             </Link>
           ))}

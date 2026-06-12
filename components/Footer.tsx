@@ -14,50 +14,66 @@ function LinkedinIcon() {
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-brand-white">
-      <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <>
+      {/* Pre-footer CTA bar */}
+      <div className="bg-brand-orange">
+        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <div className="mb-5">
-              <Image src="/images/logo-white.png" alt="Trondheim Brannkonsult" width={234} height={72} className="object-contain" />
-            </div>
-            <p className="text-brand-white/60 text-sm leading-relaxed mb-6">
-              Sentralt godkjent foretak for brannprosjektering i tiltaksklasse 1 og 2. Vi hjelper deg med brannkonsept, brannprosjektering og branntilsyn i Trondheim og Trøndelag.
-            </p>
-            <div className="flex gap-4">
-              <a href="#" aria-label="Facebook" className="text-brand-white/50 hover:text-brand-orange transition-colors"><FacebookIcon /></a>
-              <a href="#" aria-label="Instagram" className="text-brand-white/50 hover:text-brand-orange transition-colors"><InstagramIcon /></a>
-              <a href="#" aria-label="LinkedIn" className="text-brand-white/50 hover:text-brand-orange transition-colors"><LinkedinIcon /></a>
-            </div>
+            <p className="text-brand-white font-black text-xl mb-1">Klar for a komme i gang?</p>
+            <p className="text-brand-white/80 text-sm">Vi svarer pa alle henvendelser innen 24 timer.</p>
           </div>
-          <div>
-            <h3 className="font-bold text-brand-white mb-5 text-sm uppercase tracking-widest">Snarveier</h3>
-            <ul className="space-y-3">
-              {[{ href: '/', label: 'Hjem' }, { href: '/om-oss', label: 'Om oss' }, { href: '/artikler/pipebrann', label: 'Artikler' }, { href: '/kontakt-oss', label: 'Kontakt oss' }].map((link) => (
-                <li key={link.href}><Link href={link.href} className="text-brand-white/60 hover:text-brand-orange transition-colors text-sm">{link.label}</Link></li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold text-brand-white mb-5 text-sm uppercase tracking-widest">Tjenester</h3>
-            <ul className="space-y-3">
-              {[{ href: '/brannkonsept', label: 'Brannkonsept' }, { href: '/brannprosjektering', label: 'Brannprosjektering' }, { href: '/branntilsyn', label: 'Branntilsyn' }, { href: '/uavhengig-kontroll', label: 'Uavhengig kontroll' }].map((link) => (
-                <li key={link.href}><Link href={link.href} className="text-brand-white/60 hover:text-brand-orange transition-colors text-sm">{link.label}</Link></li>
-              ))}
-            </ul>
-            <div className="mt-6 space-y-2 text-sm text-brand-white/60">
-              <a href="tel:+4700000000" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Phone size={13} /> +47 000 00 000</a>
-              <a href="mailto:post@trondheimbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Mail size={13} /> post@trondheimbrannkonsult.no</a>
+          <Link href="/kontakt-oss" className="shrink-0 bg-brand-white text-brand-orange font-bold px-8 py-3 rounded-[10px] hover:opacity-90 transition-opacity text-sm">
+            Kontakt oss i dag
+          </Link>
+        </div>
+      </div>
+
+      {/* Main footer */}
+      <footer className="bg-brand-dark text-brand-white">
+        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+              <div className="mb-5">
+                <Image src="/images/logo-white.png" alt="Trondheim Brannkonsult" width={234} height={72} className="object-contain" />
+              </div>
+              <p className="text-brand-white/60 text-sm leading-relaxed mb-6">
+                Sentralt godkjent foretak for brannprosjektering i tiltaksklasse 1 og 2. Vi hjelper deg med brannkonsept, brannprosjektering og branntilsyn i Trondheim og Trondelag.
+              </p>
+              <div className="flex gap-4">
+                <a href="#" aria-label="Facebook" className="text-brand-white/50 hover:text-brand-orange transition-colors"><FacebookIcon /></a>
+                <a href="#" aria-label="Instagram" className="text-brand-white/50 hover:text-brand-orange transition-colors"><InstagramIcon /></a>
+                <a href="#" aria-label="LinkedIn" className="text-brand-white/50 hover:text-brand-orange transition-colors"><LinkedinIcon /></a>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold text-brand-white mb-5 text-sm uppercase tracking-widest">Snarveier</h3>
+              <ul className="space-y-3">
+                {[{ href: '/', label: 'Hjem' }, { href: '/om-oss', label: 'Om oss' }, { href: '/artikler/pipebrann', label: 'Artikler' }, { href: '/kontakt-oss', label: 'Kontakt oss' }].map((link) => (
+                  <li key={link.href}><Link href={link.href} className="text-brand-white/60 hover:text-brand-orange transition-colors text-sm">{link.label}</Link></li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-brand-white mb-5 text-sm uppercase tracking-widest">Tjenester</h3>
+              <ul className="space-y-3 mb-6">
+                {[{ href: '/brannkonsept', label: 'Brannkonsept' }, { href: '/brannprosjektering', label: 'Brannprosjektering' }, { href: '/branntilsyn', label: 'Branntilsyn' }, { href: '/uavhengig-kontroll', label: 'Uavhengig kontroll' }].map((link) => (
+                  <li key={link.href}><Link href={link.href} className="text-brand-white/60 hover:text-brand-orange transition-colors text-sm">{link.label}</Link></li>
+                ))}
+              </ul>
+              <div className="space-y-2 text-sm text-brand-white/60">
+                <a href="tel:+4700000000" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Phone size={13} /> +47 000 00 000</a>
+                <a href="mailto:post@trondheimbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Mail size={13} /> post@trondheimbrannkonsult.no</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="border-t border-brand-darkgray/30">
-        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-brand-white/40 text-sm">© {new Date().getFullYear()} Trondheim Brannkonsult AS. Alle rettigheter forbeholdt.</p>
-          <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={100} height={40} className="object-contain" />
+        <div className="border-t border-brand-darkgray/30">
+          <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-brand-white/40 text-sm">&copy; {new Date().getFullYear()} Trondheim Brannkonsult AS. Alle rettigheter forbeholdt.</p>
+            <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={100} height={40} className="object-contain" />
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   )
 }
