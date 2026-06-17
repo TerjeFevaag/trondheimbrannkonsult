@@ -4,9 +4,9 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Branntilsyn Trondheim | Trondheim Brannkonsult',
+  title: 'Branninspeksjon Trondheim | Trondheim Brannkonsult',
   description: 'Hjelp etter branntilsyn i Trondheim og Trøndelag. Vi utarbeider tilstandsrapport og handlingsplan. Sentralt godkjent foretak.',
-  alternates: { canonical: 'https://www.trondheimbrannkonsult.no/branntilsyn' },
+  alternates: { canonical: 'https://www.trondheimbrannkonsult.no/branninspeksjon' },
 }
 
 const faqItems = [
@@ -32,7 +32,7 @@ const faqItems = [
   },
 ]
 
-export default function BranntilsynPage() {
+export default function BranninspeksjonPage() {
   return (
     <>
       {/* Dark hero */}
