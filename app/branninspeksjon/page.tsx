@@ -45,7 +45,7 @@ const pageJsonLd = {
         { '@type': 'Question', name: 'Hva er forskjellen på branntilsyn og branninspeksjon?', acceptedAnswer: { '@type': 'Answer', text: 'Branntilsyn utføres av kommunens brann- og redningsetat og er et lovpålagt tilsyn. Branninspeksjon er en frivillig gjennomgang utført av en privat brannrådgiver — som oss — der vi kartlegger hele byggets brannsikkerhet og gir deg en helhetlig tilstandsrapport.' } },
         { '@type': 'Question', name: 'Hvem er ansvarlig for brannsikkerheten i et sameie?', acceptedAnswer: { '@type': 'Answer', text: 'Eier av bygget — typisk et borettslag eller sameie — er ansvarlig for at brannsikkerheten er i orden. Styret har plikt til å følge opp pålegg fra brannvesenet.' } },
         { '@type': 'Question', name: 'Hva skjer hvis bygget ikke oppfyller kravene?', acceptedAnswer: { '@type': 'Answer', text: 'Brannvesenet kan gi pålegg om utbedring med frist. I alvorlige tilfeller kan bygget stenges. Vi hjelper deg med å prioritere tiltakene og finne kostnadseffektive løsninger.' } },
-        { '@type': 'Question', name: 'Hva koster en branninspeksjon i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og kompleksitet. Kontakt oss for et uforpliktende tilbud — vi gir alltid fastpris.' } },
+        { '@type': 'Question', name: 'Hva koster en branninspeksjon?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og kompleksitet. Vi utfører branninspeksjon i Trondheim, hele Trøndelag og resten av landet. Kontakt oss for et uforpliktende tilbud — vi gir alltid fastpris.' } },
         { '@type': 'Question', name: 'Gjelder oppgraderingskravet for alle eldre bygninger?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, alle eksisterende bygg skal oppgraderes til et brannsikkerhetsnivå tilsvarende det som gjaldt ved BF85 (Byggeforskrift 1985) eller bedre. Eldre bygg som ikke er oppgradert kan motta pålegg.' } },
       ],
     },
@@ -66,8 +66,8 @@ const faqItems = [
     answer: 'Brannvesenet kan gi pålegg om utbedring med frist. I alvorlige tilfeller kan bygget stenges. Vi hjelper deg med å prioritere tiltakene og finne kostnadseffektive løsninger.',
   },
   {
-    question: 'Hva koster en branninspeksjon i Trondheim?',
-    answer: 'Prisen avhenger av byggets størrelse og kompleksitet. Kontakt oss for et uforpliktende tilbud — vi gir alltid fastpris.',
+    question: 'Hva koster en branninspeksjon?',
+    answer: 'Prisen avhenger av byggets størrelse og kompleksitet. Vi utfører branninspeksjon i Trondheim, hele Trøndelag og resten av landet. Kontakt oss for et uforpliktende tilbud — vi gir alltid fastpris.',
   },
   {
     question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',

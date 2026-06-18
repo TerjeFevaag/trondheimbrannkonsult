@@ -45,7 +45,7 @@ const pageJsonLd = {
       mainEntity: [
         { '@type': 'Question', name: 'Hva er uavhengig kontroll av brann?', acceptedAnswer: { '@type': 'Answer', text: 'Uavhengig kontroll (UK) av brann er en faglig gjennomgang av brannkonseptet utført av et foretak som ikke selv har prosjektert brannsikkerheten. Kontrollen sikrer at løsningene er i tråd med TEK17 og at dokumentasjonen holder nødvendig kvalitet.' } },
         { '@type': 'Question', name: 'Når er det krav om uavhengig kontroll?', acceptedAnswer: { '@type': 'Answer', text: 'Krav om UK av brann gjelder når brannprosjekteringen er i tiltaksklasse 2 eller høyere, i henhold til SAK10 (byggesaksforskriften). Dette gjelder de fleste leilighetsbygg, næringsbygg og andre bygg over 2 etasjer.' } },
-        { '@type': 'Question', name: 'Hva koster uavhengig kontroll av brann?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og tiltaksklasse. Kontakt oss for et konkret tilbud — vi gir alltid fastpris.' } },
+        { '@type': 'Question', name: 'Hva koster uavhengig kontroll av brann?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og tiltaksklasse. Vi tar oppdrag i Trondheim, hele Trøndelag og resten av landet. Kontakt oss for et konkret tilbud — vi gir alltid fastpris.' } },
         { '@type': 'Question', name: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, det er nettopp det som er poenget med uavhengig kontroll. Vi tar oppdrag som kontrollerende for brannkonsept vi ikke har utarbeidet selv.' } },
       ],
     },
@@ -63,7 +63,7 @@ const faqItems = [
   },
   {
     question: 'Hva koster uavhengig kontroll av brann?',
-    answer: 'Prisen avhenger av byggets størrelse og tiltaksklasse. Kontakt oss for et konkret tilbud — vi gir alltid fastpris.',
+    answer: 'Prisen avhenger av byggets størrelse og tiltaksklasse. Vi tar oppdrag i Trondheim, hele Trøndelag og resten av landet. Kontakt oss for et konkret tilbud — vi gir alltid fastpris.',
   },
   {
     question: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?',

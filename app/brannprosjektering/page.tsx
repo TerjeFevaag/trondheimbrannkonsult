@@ -47,7 +47,7 @@ const pageJsonLd = {
         { '@type': 'Question', name: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, de fleste søknadspliktige tiltak krever brannprosjektering. Dette gjelder tilbygg, bruksendring, ny boenhet og rehabilitering av eldre bygg.' } },
         { '@type': 'Question', name: 'Er befaring nødvendig?', acceptedAnswer: { '@type': 'Answer', text: 'For nybygg og enklere tilbygg er det som regel ikke nødvendig med befaring. Digitale tegninger og kartdata er ofte tilstrekkelig grunnlag.' } },
         { '@type': 'Question', name: 'Tilbyr dere håndverkertjenester?', acceptedAnswer: { '@type': 'Answer', text: 'Nei — vi er en nøytral rådgiver og selger ingen produkter. Dette gjør at vi kan gi deg råd som faktisk er i din interesse.' } },
-        { '@type': 'Question', name: 'Hva trenger dere for å gi pristilbud?', acceptedAnswer: { '@type': 'Answer', text: 'Vi trenger adresse, plantegninger og en kort beskrivelse av prosjektet. Send oss disse via kontaktskjemaet, så svarer vi med fastpris innen 24 timer.' } },
+        { '@type': 'Question', name: 'Hva trenger dere for å gi pristilbud?', acceptedAnswer: { '@type': 'Answer', text: 'Vi trenger adresse, plantegninger og en kort beskrivelse av prosjektet. Send oss disse via kontaktskjemaet, så svarer vi med fastpris innen 24 timer. Vi jobber digitalt og hjelper kunder i Trondheim, hele Trøndelag og resten av landet — befaring er sjelden nødvendig uansett hvor prosjektet er.' } },
       ],
     },
   ],
@@ -72,7 +72,7 @@ const faqItems = [
   },
   {
     question: 'Hva trenger dere for å gi pristilbud?',
-    answer: 'Vi trenger adresse, plantegninger og en kort beskrivelse av prosjektet. Send oss disse via kontaktskjemaet, så svarer vi med fastpris innen 24 timer.',
+    answer: 'Vi trenger adresse, plantegninger og en kort beskrivelse av prosjektet. Send oss disse via kontaktskjemaet, så svarer vi med fastpris innen 24 timer. Vi jobber digitalt og hjelper kunder i Trondheim, hele Trøndelag og resten av landet — befaring er sjelden nødvendig uansett hvor prosjektet er.',
   },
 ]
 

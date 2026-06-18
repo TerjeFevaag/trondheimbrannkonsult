@@ -47,7 +47,7 @@ const pageJsonLd = {
         { '@type': 'Question', name: 'Hva er et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17).' } },
         { '@type': 'Question', name: 'Når trenger jeg et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Det kreves brannkonsept ved de fleste byggesaker som er søknadspliktige — inkludert nybygg, tilbygg, bruksendring og rehabilitering. Ta kontakt for å avklare om ditt prosjekt er søknadspliktig.' } },
         { '@type': 'Question', name: 'Hva koster et brannkonsept i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Vi tilbyr alltid fastpris. Et brannkonsept for et enebolig-tilbygg i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva. Kontakt oss for et konkret tilbud.' } },
-        { '@type': 'Question', name: 'Leverer dere til Trondheim kommune?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, vi har god erfaring med kravene i Trondheim kommune og leverer dokumentasjon tilpasset kommunens byggesaksavdeling. Vi tar også oppdrag i hele Trøndelag.' } },
+        { '@type': 'Question', name: 'Jobber dere kun i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Nei — vi er basert i Trondheim, men tar oppdrag i hele Trøndelag og resten av landet. Vi kjenner kravene til Trondheim kommune godt og jobber jevnlig med prosjekter i kommuner som Stjørdal, Malvik, Melhus, Klæbu og Steinkjer. Vi hjelper også kunder utenfor Trøndelag — send oss prosjektbeskrivelsen din uansett hvor i Norge du befinner deg.' } },
       ],
     },
   ],
@@ -67,8 +67,8 @@ const faqItems = [
     answer: 'Vi tilbyr alltid fastpris. Et brannkonsept for et enebolig-tilbygg i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva. Kontakt oss for et konkret tilbud.',
   },
   {
-    question: 'Leverer dere til Trondheim kommune?',
-    answer: 'Ja, vi har god erfaring med kravene i Trondheim kommune og leverer dokumentasjon tilpasset kommunens byggesaksavdeling. Vi jobber jevnlig med prosjekter i Midtbyen, Heimdal, Lade, Ranheim og Byåsen. Vi tar også oppdrag i hele Trøndelag.',
+    question: 'Jobber dere kun i Trondheim?',
+    answer: 'Nei — vi er basert i Trondheim, men tar oppdrag i hele Trøndelag og resten av landet. Vi kjenner kravene til Trondheim kommune godt og jobber jevnlig med prosjekter i kommuner som Stjørdal, Malvik, Melhus, Klæbu og Steinkjer. Vi hjelper også kunder utenfor Trøndelag — send oss prosjektbeskrivelsen din uansett hvor i Norge du befinner deg.',
   },
 ]
 
