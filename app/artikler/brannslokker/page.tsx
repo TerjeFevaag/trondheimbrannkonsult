@@ -7,11 +7,33 @@ export const metadata: Metadata = {
   title: 'Har du riktig brannslokkeapparat? | Trondheim Brannkonsult',
   description: 'Vet du hvilken type brannslokker du trenger? Vi gjennomgår krav til brannslokking i boliger og forskjellen mellom pulver- og skumapparater.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/artikler/brannslokker' },
+  openGraph: {
+    title: 'Har du riktig brannslokkeapparat? | Trondheim Brannkonsult',
+    description: 'Vet du hvilken type brannslokker du trenger? Vi gjennomgår krav til brannslokking i boliger og forskjellen mellom pulver- og skumapparater.',
+    url: 'https://www.trondheimbrannkonsult.no/artikler/brannslokker',
+    siteName: 'Trondheim Brannkonsult',
+    locale: 'nb_NO',
+    type: 'article',
+    images: [{ url: '/images/article-brannslukker.jpg', width: 1200, height: 630, alt: 'Brannslokkeapparat i bolig' }],
+  },
+}
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Har du riktig brannslokkeapparat i boligen?',
+  description: 'Vet du hvilken type brannslokker du trenger? Vi gjennomgår krav til brannslokking i boliger og forskjellen mellom pulver- og skumapparater.',
+  image: 'https://www.trondheimbrannkonsult.no/images/article-brannslukker.jpg',
+  url: 'https://www.trondheimbrannkonsult.no/artikler/brannslokker',
+  inLanguage: 'nb-NO',
+  publisher: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
+  author: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
 }
 
 export default function BrannslokkePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {/* Dark hero */}
       <section className="bg-brand-dark py-20 lg:py-28">
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">

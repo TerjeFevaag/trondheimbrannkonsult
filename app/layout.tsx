@@ -38,15 +38,49 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Trondheim Brannkonsult AS',
-  description: 'Brannprosjektering og brannkonsept i Trondheim',
-  telephone: '+47 000 00 000',
-  email: 'post@trondheimbrannkonsult.no',
-  address: { '@type': 'PostalAddress', addressLocality: 'Trondheim', addressCountry: 'NO' },
-  url: 'https://www.trondheimbrannkonsult.no',
-  priceRange: 'Fra kr 15 000',
-  hasCredential: 'Sentralt godkjent tiltaksklasse 1 og 2',
+  '@graph': [
+    {
+      '@type': ['LocalBusiness', 'ProfessionalService'],
+      '@id': 'https://www.trondheimbrannkonsult.no/#business',
+      name: 'Trondheim Brannkonsult AS',
+      description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim. Vi tilbyr brannkonsept, brannprosjektering, branninspeksjon og uavhengig kontroll i Trondheim og Trøndelag.',
+      telephone: '+47 000 00 000',
+      email: 'post@trondheimbrannkonsult.no',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Trondheim',
+        addressRegion: 'Trøndelag',
+        addressCountry: 'NO',
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: 63.4305, longitude: 10.3951 },
+      url: 'https://www.trondheimbrannkonsult.no',
+      logo: 'https://www.trondheimbrannkonsult.no/images/logo-black.png',
+      image: 'https://www.trondheimbrannkonsult.no/images/hero.jpg',
+      priceRange: 'Fra kr 15 000',
+      openingHoursSpecification: [
+        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '16:00' },
+      ],
+      areaServed: [
+        { '@type': 'City', name: 'Trondheim' },
+        { '@type': 'AdministrativeArea', name: 'Trøndelag' },
+      ],
+      hasCredential: {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'Sentral godkjenning',
+        name: 'Sentralt godkjent for brannprosjektering tiltaksklasse 1 og 2 (DiBK)',
+      },
+      sameAs: ['https://www.proff.no'],
+      foundingDate: '2013',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.trondheimbrannkonsult.no/#website',
+      url: 'https://www.trondheimbrannkonsult.no',
+      name: 'Trondheim Brannkonsult',
+      inLanguage: 'nb-NO',
+      publisher: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
+    },
+  ],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

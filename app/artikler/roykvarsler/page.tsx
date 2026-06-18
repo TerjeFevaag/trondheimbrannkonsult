@@ -7,11 +7,33 @@ export const metadata: Metadata = {
   title: 'Riktig røykvarsler redder liv | Trondheim Brannkonsult',
   description: 'Er du godt nok sikret mot brann om natten? Vi forklarer krav til røykvarslere og riktig plassering i norske boliger.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/artikler/roykvarsler' },
+  openGraph: {
+    title: 'Riktig røykvarsler redder liv | Trondheim Brannkonsult',
+    description: 'Er du godt nok sikret mot brann om natten? Vi forklarer krav til røykvarslere og riktig plassering i norske boliger.',
+    url: 'https://www.trondheimbrannkonsult.no/artikler/roykvarsler',
+    siteName: 'Trondheim Brannkonsult',
+    locale: 'nb_NO',
+    type: 'article',
+    images: [{ url: '/images/article-roykvarsler.jpg', width: 1200, height: 630, alt: 'Røykvarsler i bolig' }],
+  },
+}
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Riktig røykvarsler redder liv',
+  description: 'Er du godt nok sikret mot brann om natten? Vi forklarer krav til røykvarslere og riktig plassering i norske boliger.',
+  image: 'https://www.trondheimbrannkonsult.no/images/article-roykvarsler.jpg',
+  url: 'https://www.trondheimbrannkonsult.no/artikler/roykvarsler',
+  inLanguage: 'nb-NO',
+  publisher: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
+  author: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
 }
 
 export default function RoykVarslerPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {/* Dark hero */}
       <section className="bg-brand-dark py-20 lg:py-28">
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">

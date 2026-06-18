@@ -5,9 +5,18 @@ import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Om oss | Trondheim Brannkonsult',
-  description: 'Trondheim Brannkonsult er et sentralt godkjent brannprosjekteringsfirma med over ti års erfaring. Vi hjelper kunder i Trondheim, Trøndelag og hele landet.',
+  title: 'Om oss – Sentralt godkjent brannrådgiver siden 2013 | Trondheim Brannkonsult',
+  description: 'Trondheim Brannkonsult er et sentralt godkjent (DiBK) brannprosjekteringsfirma med over 1 200 prosjekter siden 2013. Nøytrale rådgivere — ingen produktsalg.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/om-oss' },
+  openGraph: {
+    title: 'Om oss – Sentralt godkjent brannrådgiver siden 2013 | Trondheim Brannkonsult',
+    description: 'Over 1 200 prosjekter siden 2013. Sentralt godkjent (DiBK). Nøytrale brannrådgivere i Trondheim og Trøndelag.',
+    url: 'https://www.trondheimbrannkonsult.no/om-oss',
+    siteName: 'Trondheim Brannkonsult',
+    locale: 'nb_NO',
+    type: 'website',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Om Trondheim Brannkonsult' }],
+  },
 }
 
 export default function OmOssPage() {
@@ -17,7 +26,7 @@ export default function OmOssPage() {
       <section className="bg-brand-dark py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="font-accent text-brand-orange text-xl mb-4">Om oss</p>
-          <h1 className="text-brand-white font-black text-4xl lg:text-6xl leading-tight mb-6">Trondheim Brannkonsult</h1>
+          <h1 className="text-brand-white font-black text-4xl lg:text-6xl leading-tight mb-6">Sentralt godkjent brannrådgiver siden 2013</h1>
           <div className="w-20 h-1.5 bg-brand-orange mb-8" />
           <p className="text-brand-white/70 text-lg lg:text-xl leading-relaxed max-w-2xl">
             Vi er et spesialisert brannprosjekteringsfirma med sentral godkjenning og over ti års erfaring. Seriøse, nøytrale og løsningsorienterte.

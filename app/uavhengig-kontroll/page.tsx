@@ -5,9 +5,43 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll brann Trondheim | Trondheim Brannkonsult',
-  description: 'Uavhengig kontroll av brannkonsept i Trondheim og Trøndelag. Sentralt godkjent foretak. Fastpris.',
+  title: 'Uavhengig kontroll brann Trondheim – SAK10 | Trondheim Brannkonsult',
+  description: 'Uavhengig kontroll (UK) av brannkonsept i tiltaksklasse 2 og høyere. Trondheim og Trøndelag. Sentralt godkjent foretak. Vi er genuint nøytrale — ingen produktsalg.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll' },
+  openGraph: {
+    title: 'Uavhengig kontroll brann Trondheim – SAK10 | Trondheim Brannkonsult',
+    description: 'Uavhengig kontroll av brannkonsept for byggeprosjekter i Trondheim og Trøndelag. Genuint nøytral, ingen produktsalg.',
+    url: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll',
+    siteName: 'Trondheim Brannkonsult',
+    locale: 'nb_NO',
+    type: 'website',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Uavhengig kontroll brann Trondheim – Trondheim Brannkonsult' }],
+  },
+}
+
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll/#service',
+      name: 'Uavhengig kontroll brann Trondheim',
+      description: 'Uavhengig kontroll (UK) av brannkonsept for byggeprosjekter i tiltaksklasse 2 eller høyere, i henhold til SAK10. Trondheim og Trøndelag.',
+      provider: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
+      areaServed: [{ '@type': 'City', name: 'Trondheim' }, { '@type': 'AdministrativeArea', name: 'Trøndelag' }],
+      url: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll',
+      serviceType: 'Uavhengig kontroll brann',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Hva er uavhengig kontroll av brann?', acceptedAnswer: { '@type': 'Answer', text: 'Uavhengig kontroll (UK) av brann er en faglig gjennomgang av brannkonseptet utført av et foretak som ikke selv har prosjektert brannsikkerheten. Kontrollen sikrer at løsningene er i tråd med TEK17 og at dokumentasjonen holder nødvendig kvalitet.' } },
+        { '@type': 'Question', name: 'Når er det krav om uavhengig kontroll?', acceptedAnswer: { '@type': 'Answer', text: 'Krav om UK av brann gjelder når brannprosjekteringen er i tiltaksklasse 2 eller høyere, i henhold til SAK10 (byggesaksforskriften). Dette gjelder de fleste leilighetsbygg, næringsbygg og andre bygg over 2 etasjer.' } },
+        { '@type': 'Question', name: 'Hva koster uavhengig kontroll av brann?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og tiltaksklasse. Kontakt oss for et konkret tilbud — vi gir alltid fastpris.' } },
+        { '@type': 'Question', name: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, det er nettopp det som er poenget med uavhengig kontroll. Vi tar oppdrag som kontrollerende for brannkonsept vi ikke har utarbeidet selv.' } },
+      ],
+    },
+  ],
 }
 
 const faqItems = [
@@ -32,6 +66,7 @@ const faqItems = [
 export default function UavhengigKontrollPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       {/* Dark hero */}
       <section className="bg-brand-dark py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

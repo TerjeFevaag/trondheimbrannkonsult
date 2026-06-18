@@ -4,9 +4,44 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Branninspeksjon Trondheim | Trondheim Brannkonsult',
-  description: 'Hjelp etter branntilsyn i Trondheim og Trøndelag. Vi utarbeider tilstandsrapport og handlingsplan. Sentralt godkjent foretak.',
+  title: 'Branninspeksjon Trondheim – Tilstandsrapport | Trondheim Brannkonsult',
+  description: 'Fått pålegg etter branntilsyn, eller vil sjekke brannsikkerheten? Vi utfører branninspeksjon i Trondheim og Trøndelag og utarbeider tilstandsrapport. Fastpris.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/branninspeksjon' },
+  openGraph: {
+    title: 'Branninspeksjon Trondheim – Tilstandsrapport | Trondheim Brannkonsult',
+    description: 'Fått pålegg etter branntilsyn? Vi inspiserer bygget og utarbeider tilstandsrapport og handlingsplan. Fastpris.',
+    url: 'https://www.trondheimbrannkonsult.no/branninspeksjon',
+    siteName: 'Trondheim Brannkonsult',
+    locale: 'nb_NO',
+    type: 'website',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Branninspeksjon Trondheim – Trondheim Brannkonsult' }],
+  },
+}
+
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.trondheimbrannkonsult.no/branninspeksjon/#service',
+      name: 'Branninspeksjon Trondheim',
+      description: 'Grundig gjennomgang av byggets brannsikkerhet med tilstandsrapport og handlingsplan. For privatpersoner, borettslag og næringseiendom i Trondheim og Trøndelag.',
+      provider: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
+      areaServed: [{ '@type': 'City', name: 'Trondheim' }, { '@type': 'AdministrativeArea', name: 'Trøndelag' }],
+      url: 'https://www.trondheimbrannkonsult.no/branninspeksjon',
+      serviceType: 'Branninspeksjon',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Hva er forskjellen på branntilsyn og branninspeksjon?', acceptedAnswer: { '@type': 'Answer', text: 'Branntilsyn utføres av kommunens brann- og redningsetat og er et lovpålagt tilsyn. Branninspeksjon er en frivillig gjennomgang utført av en privat brannrådgiver — som oss — der vi kartlegger hele byggets brannsikkerhet og gir deg en helhetlig tilstandsrapport.' } },
+        { '@type': 'Question', name: 'Hvem er ansvarlig for brannsikkerheten i et sameie?', acceptedAnswer: { '@type': 'Answer', text: 'Eier av bygget — typisk et borettslag eller sameie — er ansvarlig for at brannsikkerheten er i orden. Styret har plikt til å følge opp pålegg fra brannvesenet.' } },
+        { '@type': 'Question', name: 'Hva skjer hvis bygget ikke oppfyller kravene?', acceptedAnswer: { '@type': 'Answer', text: 'Brannvesenet kan gi pålegg om utbedring med frist. I alvorlige tilfeller kan bygget stenges. Vi hjelper deg med å prioritere tiltakene og finne kostnadseffektive løsninger.' } },
+        { '@type': 'Question', name: 'Hva koster en branninspeksjon i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og kompleksitet. Kontakt oss for et uforpliktende tilbud — vi gir alltid fastpris.' } },
+        { '@type': 'Question', name: 'Gjelder oppgraderingskravet for alle eldre bygninger?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, alle eksisterende bygg skal oppgraderes til et brannsikkerhetsnivå tilsvarende det som gjaldt ved BF85 (Byggeforskrift 1985) eller bedre. Eldre bygg som ikke er oppgradert kan motta pålegg.' } },
+      ],
+    },
+  ],
 }
 
 const faqItems = [
@@ -35,11 +70,12 @@ const faqItems = [
 export default function BranninspeksjonPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       {/* Dark hero */}
       <section className="bg-brand-dark py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="font-accent text-brand-orange text-xl mb-4">Tjenester</p>
-          <h1 className="text-brand-white font-black text-4xl lg:text-6xl leading-tight mb-6">Branntilsyn og branninspeksjon</h1>
+          <h1 className="text-brand-white font-black text-4xl lg:text-6xl leading-tight mb-6">Branninspeksjon i Trondheim</h1>
           <div className="w-20 h-1.5 bg-brand-orange mb-8" />
           <p className="text-brand-white/70 text-lg lg:text-xl leading-relaxed max-w-2xl">
             Har du fått pålegg etter branntilsyn? Vi inspiserer bygget ditt i Trondheim og Trøndelag og utarbeider tilstandsrapport og handlingsplan.

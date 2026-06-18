@@ -1,9 +1,51 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 import ReviewCard from '@/components/ReviewCard'
+
+export const metadata: Metadata = {
+  title: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
+  description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim. Vi tilbyr brannkonsept, branninspeksjon og uavhengig kontroll. Fastpris. Svar innen 24 timer.',
+  alternates: { canonical: 'https://www.trondheimbrannkonsult.no' },
+  openGraph: {
+    title: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
+    description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim. Fastpris. Svar innen 24 timer.',
+    url: 'https://www.trondheimbrannkonsult.no',
+    siteName: 'Trondheim Brannkonsult',
+    locale: 'nb_NO',
+    type: 'website',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannprosjektering i Trondheim – Trondheim Brannkonsult' }],
+  },
+}
+
+const homepageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.trondheimbrannkonsult.no/#webpage',
+      url: 'https://www.trondheimbrannkonsult.no',
+      name: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
+      description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim.',
+      inLanguage: 'nb-NO',
+      isPartOf: { '@id': 'https://www.trondheimbrannkonsult.no/#website' },
+      about: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Hva koster brannprosjektering i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen varierer etter omfang og kompleksitet. Et brannkonsept i tiltaksklasse 2 starter hos oss fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris.' } },
+        { '@type': 'Question', name: 'Trenger jeg brannprosjektering for mitt prosjekt?', acceptedAnswer: { '@type': 'Answer', text: 'De fleste byggesaker krever brannprosjektering — tilbygg, bruksendring, ny boenhet, påbygg. Ta kontakt for en gratis vurdering av ditt prosjekt.' } },
+        { '@type': 'Question', name: 'Er befaring nødvendig?', acceptedAnswer: { '@type': 'Answer', text: 'For nybygg og enklere saker er det ofte ikke nødvendig. Takket være digitale verktøy og kartdata kan vi i mange tilfeller jobbe uten fysisk befaring.' } },
+        { '@type': 'Question', name: 'Er dere sentralt godkjent?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter.' } },
+        { '@type': 'Question', name: 'Tar dere oppdrag utenfor Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Vi hjelper kunder i Trondheim, Trøndelag og hele landet. Kontakt oss uansett hvor i Norge prosjektet ditt er.' } },
+      ],
+    },
+  ],
+}
 
 const services = [
   {
@@ -86,6 +128,7 @@ const faqItems = [
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageJsonLd) }} />
       {/* ── Hero — city image background ── */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden -mt-20 lg:-mt-24">
         <Image

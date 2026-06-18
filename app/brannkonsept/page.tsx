@@ -5,9 +5,44 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Brannkonsept Trondheim | Trondheim Brannkonsult',
-  description: 'Vi utarbeider brannkonsept for byggesaker i Trondheim og Trøndelag. Sentralt godkjent foretak. Fast pris.',
+  title: 'Brannkonsept Trondheim – Fastpris fra 15 000 kr | Trondheim Brannkonsult',
+  description: 'Vi utarbeider brannkonsept for byggesaker i Trondheim og Trøndelag. Sentralt godkjent foretak (DiBK). Fastpris, levering 5–10 virkedager. Be om gratis tilbud.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/brannkonsept' },
+  openGraph: {
+    title: 'Brannkonsept Trondheim – Fastpris fra 15 000 kr | Trondheim Brannkonsult',
+    description: 'Vi utarbeider brannkonsept for byggesaker i Trondheim og Trøndelag. Sentralt godkjent. Fastpris alltid.',
+    url: 'https://www.trondheimbrannkonsult.no/brannkonsept',
+    siteName: 'Trondheim Brannkonsult',
+    locale: 'nb_NO',
+    type: 'website',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannkonsept Trondheim – Trondheim Brannkonsult' }],
+  },
+}
+
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://www.trondheimbrannkonsult.no/brannkonsept/#service',
+      name: 'Brannkonsept Trondheim',
+      description: 'Helhetlig brannkonsept for byggesaker i Trondheim og Trøndelag. Inkluderer risikoklasse, branncelleinndeling, rømningsveier og dokumentasjon til byggesøknaden.',
+      provider: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
+      areaServed: [{ '@type': 'City', name: 'Trondheim' }, { '@type': 'AdministrativeArea', name: 'Trøndelag' }],
+      url: 'https://www.trondheimbrannkonsult.no/brannkonsept',
+      serviceType: 'Brannkonsept',
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', price: '15000', priceCurrency: 'NOK', description: 'Fra kr 15 000 ekskl. mva. for tiltaksklasse 2' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Hva er et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17).' } },
+        { '@type': 'Question', name: 'Når trenger jeg et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Det kreves brannkonsept ved de fleste byggesaker som er søknadspliktige — inkludert nybygg, tilbygg, bruksendring og rehabilitering. Ta kontakt for å avklare om ditt prosjekt er søknadspliktig.' } },
+        { '@type': 'Question', name: 'Hva koster et brannkonsept i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Vi tilbyr alltid fastpris. Et brannkonsept for et enebolig-tilbygg i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva. Kontakt oss for et konkret tilbud.' } },
+        { '@type': 'Question', name: 'Leverer dere til Trondheim kommune?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, vi har god erfaring med kravene i Trondheim kommune og leverer dokumentasjon tilpasset kommunens byggesaksavdeling. Vi tar også oppdrag i hele Trøndelag.' } },
+      ],
+    },
+  ],
 }
 
 const faqItems = [
@@ -32,6 +67,7 @@ const faqItems = [
 export default function BrannkonseptPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       {/* Dark hero */}
       <section className="bg-brand-dark py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

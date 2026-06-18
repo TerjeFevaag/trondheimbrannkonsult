@@ -7,11 +7,33 @@ export const metadata: Metadata = {
   title: 'Forebygg pipebrann med enkle grep | Trondheim Brannkonsult',
   description: 'Er du i faresonen for pipebrann? Vi forklarer hva en pipebrann er, hva som forårsaker den og hva du kan gjøre for å forebygge den.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/artikler/pipebrann' },
+  openGraph: {
+    title: 'Forebygg pipebrann med enkle grep | Trondheim Brannkonsult',
+    description: 'Er du i faresonen for pipebrann? Vi forklarer hva en pipebrann er, hva som forårsaker den og hva du kan gjøre for å forebygge den.',
+    url: 'https://www.trondheimbrannkonsult.no/artikler/pipebrann',
+    siteName: 'Trondheim Brannkonsult',
+    locale: 'nb_NO',
+    type: 'article',
+    images: [{ url: '/images/article-pipebrann.jpg', width: 1200, height: 630, alt: 'Forebygg pipebrann' }],
+  },
+}
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Forebygg pipebrann med enkle grep',
+  description: 'Er du i faresonen for pipebrann? Vi forklarer hva en pipebrann er, hva som forårsaker den og hva du kan gjøre for å forebygge den.',
+  image: 'https://www.trondheimbrannkonsult.no/images/article-pipebrann.jpg',
+  url: 'https://www.trondheimbrannkonsult.no/artikler/pipebrann',
+  inLanguage: 'nb-NO',
+  publisher: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
+  author: { '@id': 'https://www.trondheimbrannkonsult.no/#business' },
 }
 
 export default function PipebrannPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {/* Dark hero */}
       <section className="bg-brand-dark py-20 lg:py-28">
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
