@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -34,6 +35,13 @@ const pageJsonLd = {
       offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', price: '15000', priceCurrency: 'NOK', description: 'Fra kr 15 000 ekskl. mva. for tiltaksklasse 2' } },
     },
     {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.trondheimbrannkonsult.no' },
+        { '@type': 'ListItem', position: 2, name: 'Brannkonsept', item: 'https://www.trondheimbrannkonsult.no/brannkonsept' },
+      ],
+    },
+    {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'Hva er et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17).' } },
@@ -60,7 +68,7 @@ const faqItems = [
   },
   {
     question: 'Leverer dere til Trondheim kommune?',
-    answer: 'Ja, vi har god erfaring med kravene i Trondheim kommune og leverer dokumentasjon tilpasset kommunens byggesaksavdeling. Vi tar også oppdrag i hele Trøndelag.',
+    answer: 'Ja, vi har god erfaring med kravene i Trondheim kommune og leverer dokumentasjon tilpasset kommunens byggesaksavdeling. Vi jobber jevnlig med prosjekter i Midtbyen, Heimdal, Lade, Ranheim og Byåsen. Vi tar også oppdrag i hele Trøndelag.',
   },
 ]
 
@@ -77,6 +85,10 @@ export default function BrannkonseptPage() {
           <p className="text-brand-white/70 text-lg lg:text-xl leading-relaxed max-w-2xl">
             Kommunen krever et brannkonsept ved de fleste søknadspliktige byggesaker. Vi utarbeider helhetlige brannkonsept som ivaretar brannsikkerheten og oppfyller myndighetskravene.
           </p>
+          <div className="mt-8 flex items-center gap-4">
+            <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={56} height={56} className="object-contain" />
+            <span className="text-brand-white/50 text-sm">Sentralt godkjent foretak — DiBK tiltaksklasse 1 og 2</span>
+          </div>
         </div>
       </section>
 

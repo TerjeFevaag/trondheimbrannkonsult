@@ -18,6 +18,16 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.trondheimbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Artikler', item: 'https://www.trondheimbrannkonsult.no/artikler' },
+    { '@type': 'ListItem', position: 3, name: 'Forebygg pipebrann med enkle grep', item: 'https://www.trondheimbrannkonsult.no/artikler/pipebrann' },
+  ],
+}
+
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -33,6 +43,7 @@ const articleJsonLd = {
 export default function PipebrannPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {/* Dark hero */}
       <section className="bg-brand-dark py-20 lg:py-28">

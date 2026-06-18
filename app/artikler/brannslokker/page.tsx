@@ -18,6 +18,16 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.trondheimbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Artikler', item: 'https://www.trondheimbrannkonsult.no/artikler' },
+    { '@type': 'ListItem', position: 3, name: 'Har du riktig brannslokkeapparat?', item: 'https://www.trondheimbrannkonsult.no/artikler/brannslokker' },
+  ],
+}
+
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -33,6 +43,7 @@ const articleJsonLd = {
 export default function BrannslokkePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {/* Dark hero */}
       <section className="bg-brand-dark py-20 lg:py-28">
@@ -134,7 +145,7 @@ export default function BrannslokkePage() {
             <div className="bg-brand-lightgray rounded-[20px] p-8">
               <h2 className="text-brand-black text-xl font-black mb-3">Trenger du brannprosjektering?</h2>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Trondheim Brannkonsult hjelper deg med brannkonsept, brannprosjektering og branntilsyn i Trondheim og Trøndelag.
+                Trondheim Brannkonsult hjelper deg med brannkonsept, brannprosjektering og branninspeksjon i Trondheim og Trøndelag.
               </p>
               <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3 rounded-[10px] hover:opacity-90 transition-opacity">
                 Kontakt oss

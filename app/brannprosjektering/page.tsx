@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -31,6 +32,13 @@ const pageJsonLd = {
       areaServed: [{ '@type': 'City', name: 'Trondheim' }, { '@type': 'AdministrativeArea', name: 'Trøndelag' }],
       url: 'https://www.trondheimbrannkonsult.no/brannprosjektering',
       serviceType: 'Brannprosjektering',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.trondheimbrannkonsult.no' },
+        { '@type': 'ListItem', position: 2, name: 'Brannprosjektering', item: 'https://www.trondheimbrannkonsult.no/brannprosjektering' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -81,6 +89,10 @@ export default function BrannprosjekteringPage() {
           <p className="text-brand-white/70 text-lg lg:text-xl leading-relaxed max-w-2xl">
             Vi sørger for at bygget ditt oppfyller alle krav til brannsikkerhet i Trondheim og Trøndelag. Fastpris alltid. Sentralt godkjent foretak.
           </p>
+          <div className="mt-8 flex items-center gap-4">
+            <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={56} height={56} className="object-contain" />
+            <span className="text-brand-white/50 text-sm">Sentralt godkjent foretak — DiBK tiltaksklasse 1 og 2</span>
+          </div>
         </div>
       </section>
 
@@ -150,7 +162,7 @@ export default function BrannprosjekteringPage() {
                 Jo tidligere i prosjektet vi kobles inn, desto enklere er det å finne gode og kostnadseffektive løsninger. Brannkrav som oppdages sent i prosessen kan medføre dyre omprosjekteringer.
               </p>
               <p className="text-brand-darkgray leading-relaxed">
-                Vi anbefaler å kontakte oss allerede i skissefasen, slik at branntekniske hensyn kan legges inn fra start. Vi samarbeider gjerne med arkitekter og ansvarlig søker gjennom hele prosjektet.
+                Vi anbefaler å kontakte oss allerede i skissefasen, slik at branntekniske hensyn kan legges inn fra start. Vi samarbeider gjerne med arkitekter og ansvarlig søker gjennom hele prosjektet — i Trondheim, Stjørdal, Malvik, Melhus og resten av Trøndelag.
               </p>
             </div>
           </ScrollReveal>

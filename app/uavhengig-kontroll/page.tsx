@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -31,6 +32,13 @@ const pageJsonLd = {
       areaServed: [{ '@type': 'City', name: 'Trondheim' }, { '@type': 'AdministrativeArea', name: 'Trøndelag' }],
       url: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll',
       serviceType: 'Uavhengig kontroll brann',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.trondheimbrannkonsult.no' },
+        { '@type': 'ListItem', position: 2, name: 'Uavhengig kontroll', item: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -76,6 +84,10 @@ export default function UavhengigKontrollPage() {
           <p className="text-brand-white/70 text-lg lg:text-xl leading-relaxed max-w-2xl">
             I mange byggeprosjekter er det krav om uavhengig kontroll av brannsikkerheten. Vi gjennomfører kontrollen og utsteder erklæring om ansvarsrett i Trondheim og Trøndelag.
           </p>
+          <div className="mt-8 flex items-center gap-4">
+            <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={56} height={56} className="object-contain" />
+            <span className="text-brand-white/50 text-sm">Sentralt godkjent foretak — DiBK tiltaksklasse 1 og 2</span>
+          </div>
         </div>
       </section>
 
@@ -124,6 +136,20 @@ export default function UavhengigKontrollPage() {
               <p className="text-brand-darkgray leading-relaxed">
                 Kontrollen avsluttes med en skriftlig kontrollrapport og, ved godkjent kontroll, en erklæring om ansvarsrett som skal vedlegges byggesøknaden.
               </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="border-t border-brand-orange/30 pt-10">
+              <div className="bg-brand-orange/10 border border-brand-orange/30 rounded-[20px] p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="flex-1">
+                  <p className="font-bold text-brand-black mb-1">Fastpris på uavhengig kontroll</p>
+                  <p className="text-brand-darkgray text-sm">Prisen avhenger av tiltaksklasse og byggets omfang. Vi gir alltid fastpris — kontakt oss for et uforpliktende tilbud.</p>
+                </div>
+                <Link href="/kontakt-oss" className="shrink-0 bg-brand-orange text-brand-white font-bold px-6 py-3 rounded-[10px] hover:opacity-90 transition-opacity text-sm text-center">
+                  Be om tilbud
+                </Link>
+              </div>
             </div>
           </ScrollReveal>
         </div>

@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.trondheimbrannkonsult.no'),
   title: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
   description:
-    'Trondheim Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Trondheim og Trøndelag. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Trondheim Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Trondheim og Trøndelag. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no' },
   openGraph: {
     title: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
-    description: 'Trondheim Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Trondheim og Trøndelag.',
+    description: 'Trondheim Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Trondheim og Trøndelag.',
     url: 'https://www.trondheimbrannkonsult.no',
     siteName: 'Trondheim Brannkonsult',
     locale: 'nb_NO',
@@ -48,8 +48,10 @@ const jsonLd = {
       email: 'post@trondheimbrannkonsult.no',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'TODO: Legg inn gateadresse',
         addressLocality: 'Trondheim',
         addressRegion: 'Trøndelag',
+        postalCode: 'TODO: Postnummer',
         addressCountry: 'NO',
       },
       geo: { '@type': 'GeoCoordinates', latitude: 63.4305, longitude: 10.3951 },

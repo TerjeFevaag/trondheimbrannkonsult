@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -30,6 +31,13 @@ const pageJsonLd = {
       areaServed: [{ '@type': 'City', name: 'Trondheim' }, { '@type': 'AdministrativeArea', name: 'Trøndelag' }],
       url: 'https://www.trondheimbrannkonsult.no/branninspeksjon',
       serviceType: 'Branninspeksjon',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.trondheimbrannkonsult.no' },
+        { '@type': 'ListItem', position: 2, name: 'Branninspeksjon', item: 'https://www.trondheimbrannkonsult.no/branninspeksjon' },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -80,6 +88,10 @@ export default function BranninspeksjonPage() {
           <p className="text-brand-white/70 text-lg lg:text-xl leading-relaxed max-w-2xl">
             Har du fått pålegg etter branntilsyn? Vi inspiserer bygget ditt i Trondheim og Trøndelag og utarbeider tilstandsrapport og handlingsplan.
           </p>
+          <div className="mt-8 flex items-center gap-4">
+            <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={56} height={56} className="object-contain" />
+            <span className="text-brand-white/50 text-sm">Sentralt godkjent foretak — DiBK tiltaksklasse 1 og 2</span>
+          </div>
         </div>
       </section>
 
@@ -131,6 +143,20 @@ export default function BranninspeksjonPage() {
           </ScrollReveal>
 
           <ScrollReveal>
+            <div className="border-t border-brand-orange/30 pt-10">
+              <div className="bg-brand-orange/10 border border-brand-orange/30 rounded-[20px] p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="flex-1">
+                  <p className="font-bold text-brand-black mb-1">Fastpris på branninspeksjon</p>
+                  <p className="text-brand-darkgray text-sm">Prisen avhenger av byggets størrelse og kompleksitet. Vi gir alltid fastpris — ingen overraskelser.</p>
+                </div>
+                <Link href="/kontakt-oss" className="shrink-0 bg-brand-orange text-brand-white font-bold px-6 py-3 rounded-[10px] hover:opacity-90 transition-opacity text-sm text-center">
+                  Be om tilbud
+                </Link>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
             <div className="border-t border-brand-orange/30 pt-10 bg-brand-lightgray rounded-[20px] p-8">
               <h2 className="text-brand-black text-xl font-black mb-3">Oppgraderingskravet for eldre bygg</h2>
               <p className="text-brand-darkgray leading-relaxed">
@@ -157,7 +183,7 @@ export default function BranninspeksjonPage() {
       <section className="py-16 lg:py-20 bg-brand-dark">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <h2 className="text-brand-white text-3xl font-black mb-4">Kontakt oss etter branntilsyn i Trondheim</h2>
+            <h2 className="text-brand-white text-3xl font-black mb-4">Kontakt oss for branninspeksjon i Trondheim</h2>
             <p className="text-brand-white/60 text-lg mb-8">Vi hjelper deg med å følge opp pålegg og utarbeide handlingsplan.</p>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-10 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-lg">
               Kontakt oss

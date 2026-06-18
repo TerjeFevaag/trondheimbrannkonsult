@@ -147,7 +147,7 @@ export default function HomePage() {
           </h1>
           <div className="hero-3 w-24 h-1.5 bg-brand-orange mb-8" />
           <p className="hero-4 text-brand-white/70 text-lg lg:text-xl max-w-xl leading-relaxed mb-10">
-            Vi hjelper deg med brannkonsept, brannprosjektering og branntilsyn i Trondheim og Trøndelag. Sentralt godkjent foretak. Fastpris alltid.
+            Vi hjelper deg med brannkonsept, brannprosjektering og branninspeksjon i Trondheim og Trøndelag. Sentralt godkjent foretak. Fastpris alltid.
           </p>
           <div className="hero-5 flex flex-col sm:flex-row gap-4">
             <Link href="/kontakt-oss" className="bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-base">

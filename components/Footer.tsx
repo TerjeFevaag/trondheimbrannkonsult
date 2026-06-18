@@ -37,7 +37,7 @@ export default function Footer() {
                 <Image src="/images/logo-white.png" alt="Trondheim Brannkonsult" width={234} height={72} className="object-contain" />
               </div>
               <p className="text-brand-white/60 text-sm leading-relaxed mb-6">
-                Sentralt godkjent foretak for brannprosjektering i tiltaksklasse 1 og 2. Vi hjelper deg med brannkonsept, brannprosjektering og branntilsyn i Trondheim og Trondelag.
+                Sentralt godkjent foretak for brannprosjektering i tiltaksklasse 1 og 2. Vi hjelper deg med brannkonsept, brannprosjektering og branninspeksjon i Trondheim og Trøndelag.
               </p>
               <div className="flex gap-4">
                 <a href="#" aria-label="Facebook" className="text-brand-white/50 hover:text-brand-orange transition-colors"><FacebookIcon /></a>
