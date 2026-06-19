@@ -61,8 +61,9 @@ export default function Footer() {
                 ))}
               </ul>
               <div className="space-y-2 text-sm text-brand-white/60">
-                <a href="tel:+4700000000" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Phone size={13} /> +47 000 00 000</a>
-                <a href="mailto:post@trondheimbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Mail size={13} /> post@trondheimbrannkonsult.no</a>
+                <a href="tel:+4745601942" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Phone size={13} /> +47 456 01 942</a>
+                <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors"><Mail size={13} /> post@brannkonsult.no</a>
+                <p className="text-brand-white/40 text-xs pt-1">Trondheim, Trøndelag</p>
               </div>
             </div>
           </div>

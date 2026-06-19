@@ -65,8 +65,8 @@ export default function KontaktOssPage() {
                     </div>
                     <div>
                       <p className="text-brand-white/50 text-sm mb-1">Telefon</p>
-                      <a href="tel:+4700000000" className="text-brand-white font-bold hover:text-brand-orange transition-colors">
-                        +47 000 00 000
+                      <a href="tel:+4745601942" className="text-brand-white font-bold hover:text-brand-orange transition-colors">
+                        +47 456 01 942
                       </a>
                     </div>
                   </div>
@@ -77,8 +77,8 @@ export default function KontaktOssPage() {
                     </div>
                     <div>
                       <p className="text-brand-white/50 text-sm mb-1">E-post</p>
-                      <a href="mailto:post@trondheimbrannkonsult.no" className="text-brand-white font-bold hover:text-brand-orange transition-colors break-all">
-                        post@trondheimbrannkonsult.no
+                      <a href="mailto:post@brannkonsult.no" className="text-brand-white font-bold hover:text-brand-orange transition-colors break-all">
+                        post@brannkonsult.no
                       </a>
                     </div>
                   </div>
@@ -88,9 +88,10 @@ export default function KontaktOssPage() {
                       <MapPin size={18} className="text-brand-orange" />
                     </div>
                     <div>
-                      <p className="text-brand-white/50 text-sm mb-1">Adresse</p>
-                      <p className="text-brand-white font-bold">Gateadresse</p>
-                      <p className="text-brand-white/60">Trondheim</p>
+                      <p className="text-brand-white/50 text-sm mb-1">Postadresse</p>
+                      <p className="text-brand-white font-bold">Brannkonsult AS</p>
+                      <p className="text-brand-white/60">Haakon VII's gate 6</p>
+                      <p className="text-brand-white/60">0161 Oslo</p>
                     </div>
                   </div>
 
