@@ -77,8 +77,8 @@ export default function KontaktOssPage() {
                     </div>
                     <div>
                       <p className="text-brand-white/50 text-sm mb-1">E-post</p>
-                      <a href="mailto:post@brannkonsult.no" className="text-brand-white font-bold hover:text-brand-orange transition-colors break-all">
-                        post@brannkonsult.no
+                      <a href="mailto:post@trondheimbrannkonsult.no" className="text-brand-white font-bold hover:text-brand-orange transition-colors break-all">
+                        post@trondheimbrannkonsult.no
                       </a>
                     </div>
                   </div>
