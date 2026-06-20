@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Mangler påkrevde felt' }, { status: 400 })
   }
 
-  const mailerSend = new MailerSend({ apiKey: process.env.MAILERSEND_API_KEY! })
+  const mailerSend = new MailerSend({ apiKey: process.env.MAILERSEND_API_TOKEN! })
 
   const prosjekttypeLabel: Record<string, string> = {
     brannkonsept: 'Brannkonsept',
