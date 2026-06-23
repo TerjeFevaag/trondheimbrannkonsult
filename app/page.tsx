@@ -316,20 +316,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CTA — gradient dark ── */}
-      <ScrollReveal variant="fade">
-        <section className="py-20" style={{ background: 'linear-gradient(135deg, #111111 0%, #1f1f1f 100%)' }}>
-          <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-brand-white text-3xl lg:text-4xl font-black mb-4">Klar for å komme i gang?</h2>
-            <p className="text-brand-white/60 text-lg mb-8 max-w-xl mx-auto">
-              Ta kontakt for et uforpliktende tilbud på brannprosjektering i Trondheim. Vi svarer innen 24 timer.
-            </p>
-            <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-10 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-lg">
-              Få gratis tilbud
-            </Link>
-          </div>
-        </section>
-      </ScrollReveal>
     </>
   )
 }
