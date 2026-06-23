@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="bg-brand-orange">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-brand-white font-black text-xl mb-1">Klar for a komme i gang?</p>
+            <p className="text-brand-white font-black text-xl mb-1">Klar for å komme i gang?</p>
             <p className="text-brand-white/80 text-sm">Vi svarer pa alle henvendelser innen 24 timer.</p>
           </div>
           <Link href="/kontakt-oss" className="shrink-0 bg-brand-white text-brand-orange font-bold px-8 py-3 rounded-[10px] hover:opacity-90 transition-opacity text-sm">
