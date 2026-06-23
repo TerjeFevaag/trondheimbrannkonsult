@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-brand-darkgray/30">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-brand-white/40 text-sm">&copy; {new Date().getFullYear()} Trondheim Brannkonsult AS. Alle rettigheter forbeholdt.</p>
+            <p className="text-brand-white/40 text-sm">&copy; {new Date().getFullYear()} Brannkonsult AS. Alle rettigheter forbeholdt.</p>
             <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={100} height={40} className="object-contain" />
           </div>
         </div>
