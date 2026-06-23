@@ -44,7 +44,7 @@ const jsonLd = {
       '@id': 'https://www.trondheimbrannkonsult.no/#business',
       name: 'Trondheim Brannkonsult AS',
       description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim. Vi tilbyr brannkonsept, brannprosjektering, branninspeksjon og uavhengig kontroll i Trondheim og Trøndelag.',
-      telephone: '+4745411440',
+      telephone: '+4797349273',
       email: 'post@trondheimbrannkonsult.no',
       address: {
         '@type': 'PostalAddress',

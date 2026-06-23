@@ -65,8 +65,8 @@ export default function KontaktOssPage() {
                     </div>
                     <div>
                       <p className="text-brand-white/50 text-sm mb-1">Telefon</p>
-                      <a href="tel:+4745411440" className="text-brand-white font-bold hover:text-brand-orange transition-colors">
-                        +47 454 11 440
+                      <a href="tel:+4797349273" className="text-brand-white font-bold hover:text-brand-orange transition-colors">
+                        +47 973 49 273
                       </a>
                     </div>
                   </div>
