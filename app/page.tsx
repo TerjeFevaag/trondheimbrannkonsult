@@ -7,11 +7,11 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ReviewCard from '@/components/ReviewCard'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
+  title: 'Brannprosjektering i Trondheim | Brannkonsult AS',
   description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim. Vi tilbyr brannkonsept, branninspeksjon og uavhengig kontroll. Fastpris. Svar innen 24 timer.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no' },
   openGraph: {
-    title: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
+    title: 'Brannprosjektering i Trondheim | Brannkonsult AS',
     description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim. Fastpris. Svar innen 24 timer.',
     url: 'https://www.trondheimbrannkonsult.no',
     siteName: 'Trondheim Brannkonsult',
@@ -28,7 +28,7 @@ const homepageJsonLd = {
       '@type': 'WebPage',
       '@id': 'https://www.trondheimbrannkonsult.no/#webpage',
       url: 'https://www.trondheimbrannkonsult.no',
-      name: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
+      name: 'Brannprosjektering i Trondheim | Brannkonsult AS',
       description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim.',
       inLanguage: 'nb-NO',
       isPartOf: { '@id': 'https://www.trondheimbrannkonsult.no/#website' },

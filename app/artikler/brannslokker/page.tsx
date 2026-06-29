@@ -4,11 +4,11 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Har du riktig brannslokkeapparat? | Trondheim Brannkonsult',
+  title: 'Har du riktig brannslokkeapparat? | Brannkonsult AS',
   description: 'Vet du hvilken type brannslokker du trenger? Vi gjennomgår krav til brannslokking i boliger og forskjellen mellom pulver- og skumapparater.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/artikler/brannslokker' },
   openGraph: {
-    title: 'Har du riktig brannslokkeapparat? | Trondheim Brannkonsult',
+    title: 'Har du riktig brannslokkeapparat? | Brannkonsult AS',
     description: 'Vet du hvilken type brannslokker du trenger? Vi gjennomgår krav til brannslokking i boliger og forskjellen mellom pulver- og skumapparater.',
     url: 'https://www.trondheimbrannkonsult.no/artikler/brannslokker',
     siteName: 'Trondheim Brannkonsult',

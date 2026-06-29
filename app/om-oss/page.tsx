@@ -5,11 +5,11 @@ import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Om oss – Sentralt godkjent brannrådgiver siden 2013 | Trondheim Brannkonsult',
-  description: 'Trondheim Brannkonsult er et sentralt godkjent (DiBK) brannprosjekteringsfirma med over 1 200 prosjekter siden 2013. Nøytrale rådgivere — ingen produktsalg.',
+  title: 'Om oss – Sentralt godkjent brannrådgiver siden 2013 | Brannkonsult AS',
+  description: 'Brannkonsult AS er et sentralt godkjent (DiBK) brannprosjekteringsfirma med over 1 200 prosjekter siden 2013. Nøytrale rådgivere — ingen produktsalg.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/om-oss' },
   openGraph: {
-    title: 'Om oss – Sentralt godkjent brannrådgiver siden 2013 | Trondheim Brannkonsult',
+    title: 'Om oss – Sentralt godkjent brannrådgiver siden 2013 | Brannkonsult AS',
     description: 'Over 1 200 prosjekter siden 2013. Sentralt godkjent (DiBK). Nøytrale brannrådgivere i Trondheim og Trøndelag.',
     url: 'https://www.trondheimbrannkonsult.no/om-oss',
     siteName: 'Trondheim Brannkonsult',

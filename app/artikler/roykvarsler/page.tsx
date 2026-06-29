@@ -4,11 +4,11 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Riktig røykvarsler redder liv | Trondheim Brannkonsult',
+  title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
   description: 'Er du godt nok sikret mot brann om natten? Vi forklarer krav til røykvarslere og riktig plassering i norske boliger.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/artikler/roykvarsler' },
   openGraph: {
-    title: 'Riktig røykvarsler redder liv | Trondheim Brannkonsult',
+    title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
     description: 'Er du godt nok sikret mot brann om natten? Vi forklarer krav til røykvarslere og riktig plassering i norske boliger.',
     url: 'https://www.trondheimbrannkonsult.no/artikler/roykvarsler',
     siteName: 'Trondheim Brannkonsult',

@@ -21,15 +21,15 @@ const dancing = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.trondheimbrannkonsult.no'),
-  title: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
+  title: 'Brannprosjektering i Trondheim | Brannkonsult AS',
   description:
     'Trondheim Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Trondheim og Trøndelag. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no' },
   openGraph: {
-    title: 'Brannprosjektering i Trondheim | Trondheim Brannkonsult',
+    title: 'Brannprosjektering i Trondheim | Brannkonsult AS',
     description: 'Trondheim Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Trondheim og Trøndelag.',
     url: 'https://www.trondheimbrannkonsult.no',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
     images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Trondheim Brannkonsult' }],

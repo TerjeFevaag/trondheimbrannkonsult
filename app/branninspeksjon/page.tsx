@@ -5,11 +5,11 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Branninspeksjon Trondheim – Tilstandsrapport | Trondheim Brannkonsult',
+  title: 'Branninspeksjon Trondheim – Tilstandsrapport | Brannkonsult AS',
   description: 'Fått pålegg etter branntilsyn, eller vil sjekke brannsikkerheten? Vi utfører branninspeksjon i Trondheim og Trøndelag og utarbeider tilstandsrapport. Fastpris.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/branninspeksjon' },
   openGraph: {
-    title: 'Branninspeksjon Trondheim – Tilstandsrapport | Trondheim Brannkonsult',
+    title: 'Branninspeksjon Trondheim – Tilstandsrapport | Brannkonsult AS',
     description: 'Fått pålegg etter branntilsyn? Vi inspiserer bygget og utarbeider tilstandsrapport og handlingsplan. Fastpris.',
     url: 'https://www.trondheimbrannkonsult.no/branninspeksjon',
     siteName: 'Trondheim Brannkonsult',

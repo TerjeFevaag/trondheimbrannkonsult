@@ -4,11 +4,11 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Forebygg pipebrann med enkle grep | Trondheim Brannkonsult',
+  title: 'Forebygg pipebrann med enkle grep | Brannkonsult AS',
   description: 'Er du i faresonen for pipebrann? Vi forklarer hva en pipebrann er, hva som forårsaker den og hva du kan gjøre for å forebygge den.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/artikler/pipebrann' },
   openGraph: {
-    title: 'Forebygg pipebrann med enkle grep | Trondheim Brannkonsult',
+    title: 'Forebygg pipebrann med enkle grep | Brannkonsult AS',
     description: 'Er du i faresonen for pipebrann? Vi forklarer hva en pipebrann er, hva som forårsaker den og hva du kan gjøre for å forebygge den.',
     url: 'https://www.trondheimbrannkonsult.no/artikler/pipebrann',
     siteName: 'Trondheim Brannkonsult',

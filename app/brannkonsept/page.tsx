@@ -6,11 +6,11 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Brannkonsept Trondheim – Fastpris fra 15 000 kr | Trondheim Brannkonsult',
+  title: 'Brannkonsept Trondheim – Fastpris fra 15 000 kr | Brannkonsult AS',
   description: 'Vi utarbeider brannkonsept for byggesaker i Trondheim og Trøndelag. Sentralt godkjent foretak (DiBK). Fastpris, levering 5–10 virkedager. Be om gratis tilbud.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/brannkonsept' },
   openGraph: {
-    title: 'Brannkonsept Trondheim – Fastpris fra 15 000 kr | Trondheim Brannkonsult',
+    title: 'Brannkonsept Trondheim – Fastpris fra 15 000 kr | Brannkonsult AS',
     description: 'Vi utarbeider brannkonsept for byggesaker i Trondheim og Trøndelag. Sentralt godkjent. Fastpris alltid.',
     url: 'https://www.trondheimbrannkonsult.no/brannkonsept',
     siteName: 'Trondheim Brannkonsult',

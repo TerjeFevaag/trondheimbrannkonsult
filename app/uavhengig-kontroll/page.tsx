@@ -6,11 +6,11 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll brann Trondheim – SAK10 | Trondheim Brannkonsult',
+  title: 'Uavhengig kontroll brann Trondheim – SAK10 | Brannkonsult AS',
   description: 'Uavhengig kontroll (UK) av brannkonsept i tiltaksklasse 2 og høyere. Trondheim og Trøndelag. Sentralt godkjent foretak. Vi er genuint nøytrale — ingen produktsalg.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll' },
   openGraph: {
-    title: 'Uavhengig kontroll brann Trondheim – SAK10 | Trondheim Brannkonsult',
+    title: 'Uavhengig kontroll brann Trondheim – SAK10 | Brannkonsult AS',
     description: 'Uavhengig kontroll av brannkonsept for byggeprosjekter i Trondheim og Trøndelag. Genuint nøytral, ingen produktsalg.',
     url: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll',
     siteName: 'Trondheim Brannkonsult',
