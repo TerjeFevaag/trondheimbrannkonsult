@@ -6,17 +6,17 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering Trondheim – Alle byggesaktyper | Brannkonsult AS',
-  description: 'Brannprosjektering i Trondheim og Trøndelag for tilbygg, nybygg, bruksendring og næringsbygg. Sentralt godkjent (DiBK). Fastpris, nøytral rådgiver.',
+  title: 'Brannprosjektering Trondheim – Tilbygg, nybygg og næring | Brannkonsult AS',
+  description: 'Brannprosjektering i Trondheim og Trøndelag – tilbygg, nybygg, bruksendring og næringsbygg. DiBK-godkjent. Nøytral rådgiver uten produktsalg. Fastpris. Svar innen 24 timer.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/brannprosjektering' },
   openGraph: {
-    title: 'Brannprosjektering Trondheim – Alle byggesaktyper | Brannkonsult AS',
-    description: 'Brannprosjektering i Trondheim og Trøndelag. Sentralt godkjent foretak. Fastpris alltid. Nøytral rådgiver.',
+    title: 'Brannprosjektering Trondheim – Tilbygg, nybygg og næring | Brannkonsult AS',
+    description: 'Sentralt godkjent brannprosjektering for alle byggesaker i Trondheim og Trøndelag. Nøytral rådgiver — vi selger ingen produkter. Fastpris. Svar innen 24 timer.',
     url: 'https://www.trondheimbrannkonsult.no/brannprosjektering',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
-    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannprosjektering Trondheim – Trondheim Brannkonsult' }],
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannprosjektering Trondheim – Brannkonsult AS' }],
   },
 }
 

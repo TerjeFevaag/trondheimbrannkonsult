@@ -6,17 +6,17 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Brannkonsept Trondheim – Fastpris fra 15 000 kr | Brannkonsult AS',
-  description: 'Vi utarbeider brannkonsept for byggesaker i Trondheim og Trøndelag. Sentralt godkjent foretak (DiBK). Fastpris, levering 5–10 virkedager. Be om gratis tilbud.',
+  title: 'Brannkonsept Trondheim – Fra 15 000 kr, levering 5–10 dager | Brannkonsult AS',
+  description: 'Trenger du brannkonsept i Trondheim? Vi leverer til tilbygg, nybygg, bruksendring og næringsbygg i hele Trøndelag. DiBK-godkjent. Fastpris. Gratis tilbud innen 24 timer.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/brannkonsept' },
   openGraph: {
-    title: 'Brannkonsept Trondheim – Fastpris fra 15 000 kr | Brannkonsult AS',
-    description: 'Vi utarbeider brannkonsept for byggesaker i Trondheim og Trøndelag. Sentralt godkjent. Fastpris alltid.',
+    title: 'Brannkonsept Trondheim – Fra 15 000 kr, levering 5–10 dager | Brannkonsult AS',
+    description: 'Brannkonsept for tilbygg, nybygg og bruksendring i Trondheim og Trøndelag. Sentralt godkjent (DiBK). Fastpris fra 15 000 kr ekskl. mva. Svar innen 24 timer.',
     url: 'https://www.trondheimbrannkonsult.no/brannkonsept',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
-    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannkonsept Trondheim – Trondheim Brannkonsult' }],
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannkonsept Trondheim – Brannkonsult AS' }],
   },
 }
 

@@ -5,17 +5,17 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Branninspeksjon Trondheim – Tilstandsrapport | Brannkonsult AS',
-  description: 'Fått pålegg etter branntilsyn, eller vil sjekke brannsikkerheten? Vi utfører branninspeksjon i Trondheim og Trøndelag og utarbeider tilstandsrapport. Fastpris.',
+  title: 'Branninspeksjon Trondheim – Fått pålegg? Vi hjelper deg | Brannkonsult AS',
+  description: 'Fått pålegg etter branntilsyn i Trondheim? Vi inspiserer bygget og leverer tilstandsrapport med prioritert handlingsplan. Borettslag, sameier og næring. Fastpris.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/branninspeksjon' },
   openGraph: {
-    title: 'Branninspeksjon Trondheim – Tilstandsrapport | Brannkonsult AS',
-    description: 'Fått pålegg etter branntilsyn? Vi inspiserer bygget og utarbeider tilstandsrapport og handlingsplan. Fastpris.',
+    title: 'Branninspeksjon Trondheim – Fått pålegg? Vi hjelper deg | Brannkonsult AS',
+    description: 'Branninspeksjon for borettslag, sameier og næringseiendom i Trondheim og Trøndelag. Tilstandsrapport med handlingsplan. DiBK-godkjent. Fastpris.',
     url: 'https://www.trondheimbrannkonsult.no/branninspeksjon',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
-    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Branninspeksjon Trondheim – Trondheim Brannkonsult' }],
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Branninspeksjon Trondheim – Brannkonsult AS' }],
   },
 }
 

@@ -6,17 +6,17 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll brann Trondheim – SAK10 | Brannkonsult AS',
-  description: 'Uavhengig kontroll (UK) av brannkonsept i tiltaksklasse 2 og høyere. Trondheim og Trøndelag. Sentralt godkjent foretak. Vi er genuint nøytrale — ingen produktsalg.',
+  title: 'Uavhengig kontroll brann Trondheim – SAK10, TK2 | Brannkonsult AS',
+  description: 'Krav om uavhengig kontroll av brann (SAK10)? Vi gjennomfører UK av brannkonsept i tiltaksklasse 2 og høyere i Trondheim og Trøndelag. Genuint nøytral. Fastpris.',
   alternates: { canonical: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll' },
   openGraph: {
-    title: 'Uavhengig kontroll brann Trondheim – SAK10 | Brannkonsult AS',
-    description: 'Uavhengig kontroll av brannkonsept for byggeprosjekter i Trondheim og Trøndelag. Genuint nøytral, ingen produktsalg.',
+    title: 'Uavhengig kontroll brann Trondheim – SAK10, TK2 | Brannkonsult AS',
+    description: 'Uavhengig kontroll (UK) av brannkonsept etter SAK10 i Trondheim og Trøndelag. Tiltaksklasse 2 og høyere. DiBK-godkjent. Ingen produktsalg — genuint nøytral.',
     url: 'https://www.trondheimbrannkonsult.no/uavhengig-kontroll',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
-    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Uavhengig kontroll brann Trondheim – Trondheim Brannkonsult' }],
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Uavhengig kontroll brann Trondheim – Brannkonsult AS' }],
   },
 }
 
