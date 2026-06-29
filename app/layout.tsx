@@ -71,7 +71,7 @@ const jsonLd = {
         credentialCategory: 'Sentral godkjenning',
         name: 'Sentralt godkjent for brannprosjektering tiltaksklasse 1 og 2 (DiBK)',
       },
-      sameAs: ['https://www.proff.no'],
+      sameAs: ['https://www.trondheimbrannkonsult.no'],
       foundingDate: '2013',
     },
     {

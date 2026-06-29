@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Kontakt oss – Gratis tilbud på brannprosjektering | Brannkonsult AS',
     description: 'Be om gratis tilbud på brannprosjektering i Trondheim. Fastpris. Svar innen 24 timer.',
     url: 'https://www.trondheimbrannkonsult.no/kontakt-oss',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
     images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Kontakt Trondheim Brannkonsult' }],

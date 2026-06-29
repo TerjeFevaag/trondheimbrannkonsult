@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Brannprosjektering i Trondheim | Brannkonsult AS',
     description: 'Sentralt godkjent brannprosjekteringsfirma i Trondheim. Fastpris. Svar innen 24 timer.',
     url: 'https://www.trondheimbrannkonsult.no',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
     images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannprosjektering i Trondheim – Trondheim Brannkonsult' }],

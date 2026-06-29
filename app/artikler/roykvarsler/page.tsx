@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
     description: 'Er du godt nok sikret mot brann om natten? Vi forklarer krav til røykvarslere og riktig plassering i norske boliger.',
     url: 'https://www.trondheimbrannkonsult.no/artikler/roykvarsler',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'article',
     images: [{ url: '/images/article-roykvarsler.jpg', width: 1200, height: 630, alt: 'Røykvarsler i bolig' }],

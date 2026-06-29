@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Har du riktig brannslokkeapparat? | Brannkonsult AS',
     description: 'Vet du hvilken type brannslokker du trenger? Vi gjennomgår krav til brannslokking i boliger og forskjellen mellom pulver- og skumapparater.',
     url: 'https://www.trondheimbrannkonsult.no/artikler/brannslokker',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'article',
     images: [{ url: '/images/article-brannslukker.jpg', width: 1200, height: 630, alt: 'Brannslokkeapparat i bolig' }],

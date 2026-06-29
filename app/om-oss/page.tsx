@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Om oss – Sentralt godkjent brannrådgiver siden 2013 | Brannkonsult AS',
     description: 'Over 1 200 prosjekter siden 2013. Sentralt godkjent (DiBK). Nøytrale brannrådgivere i Trondheim og Trøndelag.',
     url: 'https://www.trondheimbrannkonsult.no/om-oss',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
     images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Om Trondheim Brannkonsult' }],

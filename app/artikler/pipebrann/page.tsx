@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Forebygg pipebrann med enkle grep | Brannkonsult AS',
     description: 'Er du i faresonen for pipebrann? Vi forklarer hva en pipebrann er, hva som forårsaker den og hva du kan gjøre for å forebygge den.',
     url: 'https://www.trondheimbrannkonsult.no/artikler/pipebrann',
-    siteName: 'Trondheim Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'article',
     images: [{ url: '/images/article-pipebrann.jpg', width: 1200, height: 630, alt: 'Forebygg pipebrann' }],
