@@ -70,7 +70,10 @@ export default function Footer() {
         </div>
         <div className="border-t border-brand-darkgray/30">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-brand-white/40 text-sm">&copy; {new Date().getFullYear()} Brannkonsult AS. Alle rettigheter forbeholdt.</p>
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+              <p className="text-brand-white/40 text-sm">&copy; {new Date().getFullYear()} Brannkonsult AS. Alle rettigheter forbeholdt.</p>
+              <a href="https://fevaag.no/" target="_blank" rel="noopener noreferrer" className="text-brand-white/25 hover:text-brand-white/50 text-xs transition-colors">Utviklet av Fevaag Web Consulting</a>
+            </div>
             <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={100} height={40} className="object-contain" />
           </div>
         </div>
