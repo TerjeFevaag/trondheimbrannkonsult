@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'
 
-interface FAQItem { question: string; answer: string }
+interface FAQItem { question: string; answer: React.ReactNode }
 
 export default function FAQAccordion({ items, dark = false }: { items: FAQItem[]; dark?: boolean }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
