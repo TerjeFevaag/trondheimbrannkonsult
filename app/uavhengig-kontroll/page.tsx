@@ -60,7 +60,7 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
   },
   {
     question: 'Når er det krav om uavhengig kontroll?',
-    answer: <>Krav om UK av brann gjelder når brannprosjekteringen er i tiltaksklasse 2 eller høyere, i henhold til SAK10 (byggesaksforskriften). Dette gjelder de fleste leilighetsbygg, næringsbygg og andre bygg over 2 etasjer. Se <a href="https://www.brannkonsult.no/uavhengig-kontroll/" className="text-brand-orange hover:underline">fullstendig oversikt over regelverket for uavhengig kontroll etter SAK10</a> på brannkonsult.no.</>,
+    answer: <>Krav om UK av brann gjelder når brannprosjekteringen er i tiltaksklasse 2 eller høyere, i henhold til SAK10 (byggesaksforskriften). Dette gjelder de fleste leilighetsbygg, næringsbygg og andre bygg over 2 etasjer. Se <a href="https://www.brannkonsult.no/uavhengig-kontroll-brannkonsept/" className="text-brand-orange hover:underline">fullstendig oversikt over regelverket for uavhengig kontroll etter SAK10</a> på brannkonsult.no.</>,
   },
   {
     question: 'Hva koster uavhengig kontroll av brann?',
