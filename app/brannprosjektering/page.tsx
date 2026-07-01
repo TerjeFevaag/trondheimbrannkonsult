@@ -127,7 +127,7 @@ export default function BrannprosjekteringPage() {
             <div className="border-t border-brand-orange/30 pt-10">
               <h2 className="text-brand-black text-2xl font-black mb-5">Risikoklasser og brannklasser</h2>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Alle bygg i Norge plasseres i en risikoklasse (RKL) og brannklasse (BKL) basert på hvem som befinner seg i bygget og hvor mange etasjer det er. Disse avgjør hvilke branntekniske krav som gjelder.
+                Alle bygg i Norge plasseres i en risikoklasse (RKL) og brannklasse (BKL) basert på hvem som befinner seg i bygget og hvor mange etasjer det er. Disse avgjør hvilke branntekniske krav som gjelder. En grundigere forklaring av <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">risikoklasser og brannklasser i norsk byggeregelverk</a> finner du på brannkonsult.no.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-brand-lightgray rounded-[20px] p-6">

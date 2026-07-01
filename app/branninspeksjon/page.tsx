@@ -104,7 +104,7 @@ export default function BranninspeksjonPage() {
               Trondheim brann- og redningstjeneste (TBRT) gjennomfører tilsyn med særskilte brannobjekter — typisk næringsbygg, hoteller, sykehus og leilighetsbygg med mer enn 8 enheter. Tilsynet er stikkprøvebasert og gir ingen fullstendig gjennomgang av alle brannsikkerhetstiltak.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
-              Dersom tilsynet avdekker avvik, vil du motta et pålegg om utbedring. Det er eier av bygget som er ansvarlig for å følge opp pålegget.
+              Dersom tilsynet avdekker avvik, vil du motta et pålegg om utbedring. Det er eier av bygget som er ansvarlig for å følge opp pålegget. Du kan lese mer om <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">eiers plikter og rettigheter ved branntilsyn og pålegg</a> på brannkonsult.no.
             </p>
           </ScrollReveal>
 

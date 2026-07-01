@@ -101,7 +101,7 @@ export default function BrannkonseptPage() {
               Et brannkonsept er et strategidokument for brannsikkerhet i byggeprosjektet. Det tar stilling til bærende prinsipper for brannsikkerheten: risikoklasse, brannklasse, bæreevne ved brann, branncelleinndeling, røykventilasjon, rømning og slokkesystem.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
-              Vi utarbeider brannkonseptet i tett samarbeid med ansvarlig søker og prosjekterende, slik at alle valg er dokumentert og godkjent før byggesøknaden leveres.
+              Vi utarbeider brannkonseptet i tett samarbeid med ansvarlig søker og prosjekterende, slik at alle valg er dokumentert og godkjent før byggesøknaden leveres. For en utfyllende faglig gjennomgang av <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange hover:underline">hva et brannkonsept skal inneholde etter TEK17</a> anbefaler vi brannkonsult.no.
             </p>
           </ScrollReveal>
 
