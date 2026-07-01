@@ -44,7 +44,7 @@ const pageJsonLd = {
     {
       '@type': 'FAQPage',
       mainEntity: [
-        { '@type': 'Question', name: 'Hva er et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17).' } },
+        { '@type': 'Question', name: 'Hva er et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17). For utfyllende informasjon om hva et brannkonsept skal inneholde etter TEK17, se brannkonsult.no.' } },
         { '@type': 'Question', name: 'Når trenger jeg et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Det kreves brannkonsept ved de fleste byggesaker som er søknadspliktige — inkludert nybygg, tilbygg, bruksendring og rehabilitering. Ta kontakt for å avklare om ditt prosjekt er søknadspliktig.' } },
         { '@type': 'Question', name: 'Hva koster et brannkonsept i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Vi tilbyr alltid fastpris. Et brannkonsept for et enebolig-tilbygg i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva. Kontakt oss for et konkret tilbud.' } },
         { '@type': 'Question', name: 'Leverer dere til Trondheim kommune?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, vi har god erfaring med kravene i Trondheim kommune og leverer dokumentasjon tilpasset kommunens byggesaksavdeling. Vi tar også oppdrag i hele Trøndelag.' } },
@@ -56,7 +56,7 @@ const pageJsonLd = {
 const faqItems = [
   {
     question: 'Hva er et brannkonsept?',
-    answer: 'Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17).',
+    answer: <>Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17). For en utfyllende faglig gjennomgang av <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange hover:underline">hva et brannkonsept skal inneholde etter TEK17</a> anbefaler vi brannkonsult.no.</>,
   },
   {
     question: 'Når trenger jeg et brannkonsept?',
@@ -101,7 +101,7 @@ export default function BrannkonseptPage() {
               Et brannkonsept er et strategidokument for brannsikkerhet i byggeprosjektet. Det tar stilling til bærende prinsipper for brannsikkerheten: risikoklasse, brannklasse, bæreevne ved brann, branncelleinndeling, røykventilasjon, rømning og slokkesystem.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
-              Vi utarbeider brannkonseptet i tett samarbeid med ansvarlig søker og prosjekterende, slik at alle valg er dokumentert og godkjent før byggesøknaden leveres. For en utfyllende faglig gjennomgang av <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange hover:underline">hva et brannkonsept skal inneholde etter TEK17</a> anbefaler vi brannkonsult.no.
+              Vi utarbeider brannkonseptet i tett samarbeid med ansvarlig søker og prosjekterende, slik at alle valg er dokumentert og godkjent før byggesøknaden leveres.
             </p>
           </ScrollReveal>
 

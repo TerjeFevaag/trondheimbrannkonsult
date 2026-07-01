@@ -44,7 +44,7 @@ const pageJsonLd = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'Hva er uavhengig kontroll av brann?', acceptedAnswer: { '@type': 'Answer', text: 'Uavhengig kontroll (UK) av brann er en faglig gjennomgang av brannkonseptet utført av et foretak som ikke selv har prosjektert brannsikkerheten. Kontrollen sikrer at løsningene er i tråd med TEK17 og at dokumentasjonen holder nødvendig kvalitet.' } },
-        { '@type': 'Question', name: 'Når er det krav om uavhengig kontroll?', acceptedAnswer: { '@type': 'Answer', text: 'Krav om UK av brann gjelder når brannprosjekteringen er i tiltaksklasse 2 eller høyere, i henhold til SAK10 (byggesaksforskriften). Dette gjelder de fleste leilighetsbygg, næringsbygg og andre bygg over 2 etasjer.' } },
+        { '@type': 'Question', name: 'Når er det krav om uavhengig kontroll?', acceptedAnswer: { '@type': 'Answer', text: 'Krav om UK av brann gjelder når brannprosjekteringen er i tiltaksklasse 2 eller høyere, i henhold til SAK10 (byggesaksforskriften). Dette gjelder de fleste leilighetsbygg, næringsbygg og andre bygg over 2 etasjer. Se fullstendig oversikt over regelverket for uavhengig kontroll etter SAK10 på brannkonsult.no.' } },
         { '@type': 'Question', name: 'Hva koster uavhengig kontroll av brann?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og tiltaksklasse. Kontakt oss for et konkret tilbud — vi gir alltid fastpris.' } },
         { '@type': 'Question', name: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, det er nettopp det som er poenget med uavhengig kontroll. Vi tar oppdrag som kontrollerende for brannkonsept vi ikke har utarbeidet selv.' } },
       ],
@@ -59,7 +59,7 @@ const faqItems = [
   },
   {
     question: 'Når er det krav om uavhengig kontroll?',
-    answer: 'Krav om UK av brann gjelder når brannprosjekteringen er i tiltaksklasse 2 eller høyere, i henhold til SAK10 (byggesaksforskriften). Dette gjelder de fleste leilighetsbygg, næringsbygg og andre bygg over 2 etasjer.',
+    answer: <>Krav om UK av brann gjelder når brannprosjekteringen er i tiltaksklasse 2 eller høyere, i henhold til SAK10 (byggesaksforskriften). Dette gjelder de fleste leilighetsbygg, næringsbygg og andre bygg over 2 etasjer. Se <a href="https://www.brannkonsult.no/uavhengig-kontroll/" className="text-brand-orange hover:underline">fullstendig oversikt over regelverket for uavhengig kontroll etter SAK10</a> på brannkonsult.no.</>,
   },
   {
     question: 'Hva koster uavhengig kontroll av brann?',
@@ -100,7 +100,7 @@ export default function UavhengigKontrollPage() {
               Uavhengig kontroll (UK) av brann er et krav i byggesaksforskriften (SAK10) for byggeprosjekter der brannprosjekteringen er i tiltaksklasse 2 eller høyere. Kontrollen skal utføres av et foretak som er uavhengig av det foretaket som har utarbeidet brannkonseptet.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
-              Formålet er å sikre at brannkonseptet er i samsvar med gjeldende forskrifter, og at prosjekteringen holder tilstrekkelig faglig kvalitet. Kontrollen gir økt trygghet for byggherre, ansvarlig søker og kommunen. Se <a href="https://www.brannkonsult.no/uavhengig-kontroll/" className="text-brand-orange hover:underline">fullstendig oversikt over regelverket for uavhengig kontroll etter SAK10</a> på brannkonsult.no.
+              Formålet er å sikre at brannkonseptet er i samsvar med gjeldende forskrifter, og at prosjekteringen holder tilstrekkelig faglig kvalitet. Kontrollen gir økt trygghet for byggherre, ansvarlig søker og kommunen.
             </p>
           </ScrollReveal>
 

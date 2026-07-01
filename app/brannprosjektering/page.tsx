@@ -44,7 +44,7 @@ const pageJsonLd = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'Hva koster brannprosjektering i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris — ingen overraskelser på fakturaen.' } },
-        { '@type': 'Question', name: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, de fleste søknadspliktige tiltak krever brannprosjektering. Dette gjelder tilbygg, bruksendring, ny boenhet og rehabilitering av eldre bygg.' } },
+        { '@type': 'Question', name: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, de fleste søknadspliktige tiltak krever brannprosjektering. Dette gjelder tilbygg, bruksendring, ny boenhet og rehabilitering av eldre bygg. For utfyllende informasjon om risikoklasser og brannklasser i norsk byggeregelverk, se brannkonsult.no.' } },
         { '@type': 'Question', name: 'Er befaring nødvendig?', acceptedAnswer: { '@type': 'Answer', text: 'For nybygg og enklere tilbygg er det som regel ikke nødvendig med befaring. Digitale tegninger og kartdata er ofte tilstrekkelig grunnlag.' } },
         { '@type': 'Question', name: 'Tilbyr dere håndverkertjenester?', acceptedAnswer: { '@type': 'Answer', text: 'Nei — vi er en nøytral rådgiver og selger ingen produkter. Dette gjør at vi kan gi deg råd som faktisk er i din interesse.' } },
         { '@type': 'Question', name: 'Hva trenger dere for å gi pristilbud?', acceptedAnswer: { '@type': 'Answer', text: 'Vi trenger adresse, plantegninger og en kort beskrivelse av prosjektet. Send oss disse via kontaktskjemaet, så svarer vi med fastpris innen 24 timer.' } },
@@ -60,7 +60,7 @@ const faqItems = [
   },
   {
     question: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?',
-    answer: 'Ja, de fleste søknadspliktige tiltak krever brannprosjektering. Dette gjelder tilbygg, bruksendring, ny boenhet og rehabilitering av eldre bygg.',
+    answer: <>Ja, de fleste søknadspliktige tiltak krever brannprosjektering. Dette gjelder tilbygg, bruksendring, ny boenhet og rehabilitering av eldre bygg. En grundigere forklaring av <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">risikoklasser og brannklasser i norsk byggeregelverk</a> finner du på brannkonsult.no.</>,
   },
   {
     question: 'Er befaring nødvendig?',
@@ -127,7 +127,7 @@ export default function BrannprosjekteringPage() {
             <div className="border-t border-brand-orange/30 pt-10">
               <h2 className="text-brand-black text-2xl font-black mb-5">Risikoklasser og brannklasser</h2>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Alle bygg i Norge plasseres i en risikoklasse (RKL) og brannklasse (BKL) basert på hvem som befinner seg i bygget og hvor mange etasjer det er. Disse avgjør hvilke branntekniske krav som gjelder. En grundigere forklaring av <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">risikoklasser og brannklasser i norsk byggeregelverk</a> finner du på brannkonsult.no.
+                Alle bygg i Norge plasseres i en risikoklasse (RKL) og brannklasse (BKL) basert på hvem som befinner seg i bygget og hvor mange etasjer det er. Disse avgjør hvilke branntekniske krav som gjelder.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-brand-lightgray rounded-[20px] p-6">
