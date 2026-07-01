@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -53,7 +54,7 @@ const pageJsonLd = {
   ],
 }
 
-const faqItems = [
+const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
     question: 'Hva er et brannkonsept?',
     answer: <>Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17). For en utfyllende faglig gjennomgang av <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange hover:underline">hva et brannkonsept skal inneholde etter TEK17</a> anbefaler vi brannkonsult.no.</>,

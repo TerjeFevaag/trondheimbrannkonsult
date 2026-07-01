@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -52,7 +53,7 @@ const pageJsonLd = {
   ],
 }
 
-const faqItems = [
+const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
     question: 'Hva er uavhengig kontroll av brann?',
     answer: 'Uavhengig kontroll (UK) av brann er en faglig gjennomgang av brannkonseptet utført av et foretak som ikke selv har prosjektert brannsikkerheten. Kontrollen sikrer at løsningene er i tråd med TEK17 og at dokumentasjonen holder nødvendig kvalitet.',

@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -53,7 +54,7 @@ const pageJsonLd = {
   ],
 }
 
-const faqItems = [
+const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
     question: 'Hva koster brannprosjektering i Trondheim?',
     answer: 'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris — ingen overraskelser på fakturaen.',

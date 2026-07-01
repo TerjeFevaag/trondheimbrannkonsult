@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -52,7 +53,7 @@ const pageJsonLd = {
   ],
 }
 
-const faqItems = [
+const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
     question: 'Hva er forskjellen på branntilsyn og branninspeksjon?',
     answer: 'Branntilsyn utføres av kommunens brann- og redningsetat og er et lovpålagt tilsyn. Branninspeksjon er en frivillig gjennomgang utført av en privat brannrådgiver — som oss — der vi kartlegger hele byggets brannsikkerhet og gir deg en helhetlig tilstandsrapport.',
