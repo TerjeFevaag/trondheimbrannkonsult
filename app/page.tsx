@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -37,11 +38,11 @@ const homepageJsonLd = {
     {
       '@type': 'FAQPage',
       mainEntity: [
-        { '@type': 'Question', name: 'Hva koster brannprosjektering i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen varierer etter omfang og kompleksitet. Et brannkonsept i tiltaksklasse 2 starter hos oss fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris.' } },
-        { '@type': 'Question', name: 'Trenger jeg brannprosjektering for mitt prosjekt?', acceptedAnswer: { '@type': 'Answer', text: 'De fleste byggesaker krever brannprosjektering — tilbygg, bruksendring, ny boenhet, påbygg. Ta kontakt for en gratis vurdering av ditt prosjekt.' } },
-        { '@type': 'Question', name: 'Er befaring nødvendig?', acceptedAnswer: { '@type': 'Answer', text: 'For nybygg og enklere saker er det ofte ikke nødvendig. Takket være digitale verktøy og kartdata kan vi i mange tilfeller jobbe uten fysisk befaring.' } },
-        { '@type': 'Question', name: 'Er dere sentralt godkjent?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter.' } },
-        { '@type': 'Question', name: 'Tar dere oppdrag utenfor Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Vi hjelper kunder i Trondheim, Trøndelag og hele landet. Kontakt oss uansett hvor i Norge prosjektet ditt er.' } },
+        { '@type': 'Question', name: 'Hva koster et brannkonsept i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept i tiltaksklasse 2 starter fra 15 000 kr ekskl. mva., inkludert branntegninger. Vi gir alltid fastpris i skriftlig tilbud — ingen timepris, ingen overraskelser på fakturaen.' } },
+        { '@type': 'Question', name: 'Hva trenger dere for å gi oss et tilbud?', acceptedAnswer: { '@type': 'Answer', text: 'Adresse, plantegninger og en kort beskrivelse av hva som skal gjøres. Send det til oss, så svarer vi med fastpris innen 24 timer.' } },
+        { '@type': 'Question', name: 'Dekker dere hele Trøndelag?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Vi tar oppdrag i hele Trøndelag — Stjørdal, Malvik, Melhus, Orkanger, Steinkjer, Levanger, Verdal og alt imellom. Befaring er sjelden nødvendig.' } },
+        { '@type': 'Question', name: 'Trenger vi befaring for et tilbygg i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Sjelden. For de fleste tilbygg og bruksendringer holder det med digitale tegninger og kartdata. Vi sier ifra om vi trenger befaring — og det er i så fall inkludert i fastprisen.' } },
+        { '@type': 'Question', name: 'Er dere sentralt godkjent?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Vi har sentral godkjenning fra DiBK for brannprosjektering i tiltaksklasse 1 og 2. Det er et krav for å signere ansvarsrett i byggesøknaden.' } },
       ],
     },
   ],
@@ -51,25 +52,25 @@ const services = [
   {
     iconImage: '/images/icon-brannkonsept.gif',
     title: 'Brannkonsept',
-    description: 'Kommunen krever et brannkonsept ved de fleste byggesaker. Vi utarbeider helhetlige brannkonsept som ivaretar brannsikkerheten i ditt prosjekt.',
+    description: 'Brannkonseptet er strategidokumentet kommunen trenger for å behandle byggesøknaden. Vi kjenner kravene i Trondheim og leverer dokumentasjon som holder gjennom saksbehandlingen.',
     href: '/brannkonsept',
   },
   {
     iconImage: '/images/icon-brannprosjektering.gif',
     title: 'Brannprosjektering',
-    description: 'Vi sørger for at bygget ditt oppfyller alle krav til brannsikkerhet, og finner praktiske løsninger som sparer både tid og kostnader. Fast pris der det er mulig.',
+    description: 'Vi er uavhengig brannrådgiver uten tilknytning til produktleverandører. Løsningene vi anbefaler er valgt fordi de passer prosjektet — ikke fordi vi tjener på dem.',
     href: '/brannprosjektering',
   },
   {
     iconImage: '/images/icon-branntilsyn.png',
     title: 'Branninspeksjon',
-    description: 'Har du fått pålegg etter branntilsyn, eller ønsker du en grundig gjennomgang av byggets brannsikkerhet? Vi inspiserer og utarbeider tilstandsrapport.',
+    description: 'Fått pålegg etter branntilsyn, eller vil du vite hva som faktisk kreves av bygget? Vi gjennomgår hele bygningsmassen og leverer en rapport med prioriterte tiltak.',
     href: '/branninspeksjon',
   },
   {
     iconImage: '/images/icon-uavhengig-kontroll.png',
     title: 'Uavhengig kontroll',
-    description: 'I mange byggeprosjekter er det krav om uavhengig kontroll av brannsikkerheten. Kontrollen sikrer at brannkonseptet er i tråd med gjeldende forskrifter.',
+    description: 'SAK10 krever at brannkonseptet kontrolleres av en annen enn den som prosjekterte det. Vi gjennomfører kontrollen og utsteder erklæring om ansvarsrett.',
     href: '/uavhengig-kontroll',
   },
 ]
@@ -102,26 +103,26 @@ const reviews = [
   },
 ]
 
-const faqItems = [
+const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
-    question: 'Hva koster brannprosjektering i Trondheim?',
-    answer: 'Prisen varierer etter omfang og kompleksitet. Et brannkonsept i tiltaksklasse 2 starter hos oss fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris.',
+    question: 'Hva koster et brannkonsept i Trondheim?',
+    answer: 'Et brannkonsept i tiltaksklasse 2 starter fra 15 000 kr ekskl. mva., inkludert branntegninger. Vi gir alltid fastpris i skriftlig tilbud — ingen timepris, ingen overraskelser på fakturaen.',
   },
   {
-    question: 'Trenger jeg brannprosjektering for mitt prosjekt?',
-    answer: 'De fleste byggesaker krever brannprosjektering — tilbygg, bruksendring, ny boenhet, påbygg. Ta kontakt for en gratis vurdering av ditt prosjekt.',
+    question: 'Hva trenger dere for å gi oss et tilbud?',
+    answer: 'Adresse, plantegninger og en kort beskrivelse av hva som skal gjøres. Send det til oss, så svarer vi med fastpris innen 24 timer.',
   },
   {
-    question: 'Er befaring nødvendig?',
-    answer: 'For nybygg og enklere saker er det ofte ikke nødvendig. Takket være digitale verktøy og kartdata kan vi i mange tilfeller jobbe uten fysisk befaring.',
+    question: 'Dekker dere hele Trøndelag?',
+    answer: 'Ja. Vi tar oppdrag i hele Trøndelag — Stjørdal, Malvik, Melhus, Orkanger, Steinkjer, Levanger, Verdal og alt imellom. Befaring er sjelden nødvendig.',
+  },
+  {
+    question: 'Trenger vi befaring for et tilbygg i Trondheim?',
+    answer: 'Sjelden. For de fleste tilbygg og bruksendringer holder det med digitale tegninger og kartdata. Vi sier ifra om vi trenger befaring — og det er i så fall inkludert i fastprisen.',
   },
   {
     question: 'Er dere sentralt godkjent?',
-    answer: 'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter.',
-  },
-  {
-    question: 'Tar dere oppdrag utenfor Trondheim?',
-    answer: 'Vi hjelper kunder i Trondheim, Trøndelag og hele landet. Kontakt oss uansett hvor i Norge prosjektet ditt er.',
+    answer: 'Ja. Vi har sentral godkjenning fra DiBK for brannprosjektering i tiltaksklasse 1 og 2. Det er et krav for å signere ansvarsrett i byggesøknaden.',
   },
 ]
 

@@ -46,9 +46,9 @@ const pageJsonLd = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'Hva er et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17). For utfyllende informasjon om hva et brannkonsept skal inneholde etter TEK17, se brannkonsult.no.' } },
-        { '@type': 'Question', name: 'Når trenger jeg et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Det kreves brannkonsept ved de fleste byggesaker som er søknadspliktige — inkludert nybygg, tilbygg, bruksendring og rehabilitering. Ta kontakt for å avklare om ditt prosjekt er søknadspliktig.' } },
-        { '@type': 'Question', name: 'Hva koster et brannkonsept i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Vi tilbyr alltid fastpris. Et brannkonsept for et enebolig-tilbygg i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva. Kontakt oss for et konkret tilbud.' } },
-        { '@type': 'Question', name: 'Leverer dere til Trondheim kommune?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, vi har god erfaring med kravene i Trondheim kommune og leverer dokumentasjon tilpasset kommunens byggesaksavdeling. Vi tar også oppdrag i hele Trøndelag.' } },
+        { '@type': 'Question', name: 'Når trenger jeg brannkonsept — og når holder et brannteknisk notat?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept kreves ved de fleste søknadspliktige tiltak: nybygg, tilbygg, bruksendring og rehabilitering av eldre bygg. Et brannteknisk notat brukes for mindre, avgrensede tiltak. Vi avklarer hva som passer ditt prosjekt.' } },
+        { '@type': 'Question', name: 'Hva koster et brannkonsept?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept for et tilbygg eller en bruksendring i tiltaksklasse 2 starter fra 15 000 kr ekskl. mva., inkludert branntekniske tegninger. Vi gir alltid fastpris — aldri timepris.' } },
+        { '@type': 'Question', name: 'Leverer dere til Trondheim og Trøndelag?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Vi jobber jevnlig med prosjekter i Midtbyen, Heimdal, Lade, Ranheim, Byåsen og Lerkendal, og tar oppdrag i hele Trøndelag — fra Stjørdal i sør til Steinkjer og Namsos i nord.' } },
       ],
     },
   ],
@@ -60,16 +60,16 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
     answer: <>Et brannkonsept er en helhetlig plan for brannsikkerheten i et bygg. Det beskriver hvilke branntekniske tiltak som er valgt og dokumenterer at bygget oppfyller sikkerhetskravene i byggteknisk forskrift (TEK17). For en utfyllende faglig gjennomgang av <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange hover:underline">hva et brannkonsept skal inneholde etter TEK17</a> anbefaler vi brannkonsult.no.</>,
   },
   {
-    question: 'Når trenger jeg et brannkonsept?',
-    answer: 'Det kreves brannkonsept ved de fleste byggesaker som er søknadspliktige — inkludert nybygg, tilbygg, bruksendring og rehabilitering. Ta kontakt for å avklare om ditt prosjekt er søknadspliktig.',
+    question: 'Når trenger jeg brannkonsept — og når holder et brannteknisk notat?',
+    answer: 'Et brannkonsept kreves ved de fleste søknadspliktige tiltak: nybygg, tilbygg, bruksendring og rehabilitering av eldre bygg. Et brannteknisk notat brukes for mindre, avgrensede tiltak der det ikke er behov for en helhetlig brannsikkerhetsstrategi. Vi avklarer hva som passer ditt prosjekt.',
   },
   {
-    question: 'Hva koster et brannkonsept i Trondheim?',
-    answer: 'Vi tilbyr alltid fastpris. Et brannkonsept for et enebolig-tilbygg i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva. Kontakt oss for et konkret tilbud.',
+    question: 'Hva koster et brannkonsept?',
+    answer: 'Et brannkonsept for et tilbygg eller en bruksendring i tiltaksklasse 2 starter fra 15 000 kr ekskl. mva., inkludert branntekniske tegninger. Vi gir alltid fastpris — aldri timepris.',
   },
   {
-    question: 'Leverer dere til Trondheim kommune?',
-    answer: 'Ja, vi har god erfaring med kravene i Trondheim kommune og leverer dokumentasjon tilpasset kommunens byggesaksavdeling. Vi jobber jevnlig med prosjekter i Midtbyen, Heimdal, Lade, Ranheim og Byåsen. Vi tar også oppdrag i hele Trøndelag.',
+    question: 'Leverer dere til Trondheim og Trøndelag?',
+    answer: 'Ja. Vi jobber jevnlig med prosjekter i Midtbyen, Heimdal, Lade, Ranheim, Byåsen og Lerkendal, og tar oppdrag i hele Trøndelag — fra Stjørdal i sør til Steinkjer og Namsos i nord.',
   },
 ]
 
@@ -97,28 +97,28 @@ export default function BrannkonseptPage() {
       <section className="py-16 lg:py-24 bg-brand-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-5">Hva inkluderer brannkonseptet?</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-5">Hva er egentlig et brannkonsept?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-6">
-              Et brannkonsept er et strategidokument for brannsikkerhet i byggeprosjektet. Det tar stilling til bærende prinsipper for brannsikkerheten: risikoklasse, brannklasse, bæreevne ved brann, branncelleinndeling, røykventilasjon, rømning og slokkesystem.
+              Brannkonseptet er det overordnede dokumentet som fastlegger hvilken strategi som er valgt for brannsikkerheten i bygget. Det er ikke en liste over sprinkleranlegg og brannalarmer — det er en begrunnet plan som viser at bygget som helhet er prosjektert i tråd med TEK17.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
-              Vi utarbeider brannkonseptet i tett samarbeid med ansvarlig søker og prosjekterende, slik at alle valg er dokumentert og godkjent før byggesøknaden leveres.
+              For prosjekter i Trondheim kommune er brannkonseptet typisk vedlegg til rammesøknaden. Vi koordinerer med ansvarlig søker slik at dokumentasjonen er klar til innlevering og stemmer overens med de øvrige tegningene.
             </p>
           </ScrollReveal>
 
           <ScrollReveal>
             <div className="border-t border-brand-orange/30 pt-10">
-              <h2 className="text-brand-black text-2xl font-black mb-6">Dette er inkludert</h2>
+              <h2 className="text-brand-black text-2xl font-black mb-6">Innholdet i et brannkonsept</h2>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  'Vurdering av risikoklasse og brannklasse',
+                  'Risikoklasse (RKL) og brannklasse (BKL)',
                   'Branncelleinndeling og seksjonering',
                   'Rømningsveier og nødutganger',
-                  'Krav til bærende konstruksjoner',
+                  'Krav til bærende konstruksjoner ved brann',
                   'Røykventilasjon og overtrykksventilasjon',
                   'Slokkesystem og automatiske anlegg',
-                  'Dokumentasjon til byggesøknaden',
-                  'Støtte mot kommunens saksbehandler',
+                  'Branntekniske tegninger',
+                  'Ansvarsrett for brannprosjektering',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle size={18} className="text-brand-orange mt-0.5 shrink-0" />
@@ -131,12 +131,12 @@ export default function BrannkonseptPage() {
 
           <ScrollReveal>
             <div className="border-t border-brand-orange/30 pt-10">
-              <h2 className="text-brand-black text-2xl font-black mb-5">Slik jobber vi</h2>
+              <h2 className="text-brand-black text-2xl font-black mb-5">Fra forespørsel til ferdig dokument</h2>
               <div className="space-y-6">
                 {[
-                  { step: '01', title: 'Gratis vurdering', desc: 'Vi vurderer prosjektet ditt og gir deg en fastpris uten forpliktelser.' },
-                  { step: '02', title: 'Prosjektering', desc: 'Vi utarbeider brannkonseptet basert på tegninger og prosjektbeskrivelse.' },
-                  { step: '03', title: 'Leveranse', desc: 'Ferdig brannkonsept klart til byggesøknad, vanligvis innen 5–10 virkedager.' },
+                  { step: '01', title: 'Send inn tegninger', desc: 'Vi trenger plantegninger, adresse og en beskrivelse av prosjektet. Fastpristilbud innen 24 timer.' },
+                  { step: '02', title: 'Vi prosjekterer', desc: 'Basert på tegningene utarbeider vi brannkonseptet med alle nødvendige vurderinger og branntekniske tegninger.' },
+                  { step: '03', title: 'Klar til søknad', desc: 'Du mottar ferdig brannkonsept og signert ansvarsrett, vanligvis innen 5–10 virkedager.' },
                 ].map((item) => (
                   <div key={item.step} className="flex gap-6 items-start">
                     <div className="shrink-0 w-12 h-12 rounded-full bg-brand-orange flex items-center justify-center text-brand-white font-black text-sm">{item.step}</div>

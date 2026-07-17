@@ -44,11 +44,11 @@ const pageJsonLd = {
     {
       '@type': 'FAQPage',
       mainEntity: [
-        { '@type': 'Question', name: 'Hva koster brannprosjektering i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris — ingen overraskelser på fakturaen.' } },
-        { '@type': 'Question', name: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, de fleste søknadspliktige tiltak krever brannprosjektering. Dette gjelder tilbygg, bruksendring, ny boenhet og rehabilitering av eldre bygg. For utfyllende informasjon om risikoklasser og brannklasser i norsk byggeregelverk, se brannkonsult.no.' } },
-        { '@type': 'Question', name: 'Er befaring nødvendig?', acceptedAnswer: { '@type': 'Answer', text: 'For nybygg og enklere tilbygg er det som regel ikke nødvendig med befaring. Digitale tegninger og kartdata er ofte tilstrekkelig grunnlag.' } },
-        { '@type': 'Question', name: 'Tilbyr dere håndverkertjenester?', acceptedAnswer: { '@type': 'Answer', text: 'Nei — vi er en nøytral rådgiver og selger ingen produkter. Dette gjør at vi kan gi deg råd som faktisk er i din interesse.' } },
-        { '@type': 'Question', name: 'Hva trenger dere for å gi pristilbud?', acceptedAnswer: { '@type': 'Answer', text: 'Vi trenger adresse, plantegninger og en kort beskrivelse av prosjektet. Send oss disse via kontaktskjemaet, så svarer vi med fastpris innen 24 timer.' } },
+        { '@type': 'Question', name: 'Hva koster brannprosjektering i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Et brannkonsept for et tilbygg eller bruksendring i tiltaksklasse 2 starter fra 15 000 kr ekskl. mva., inkludert branntekniske tegninger. Vi gir alltid fastpris i skriftlig tilbud.' } },
+        { '@type': 'Question', name: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, de aller fleste søknadspliktige tiltak krever brannprosjektering — tilbygg, bruksendring, ny selvstendig boenhet og rehabilitering av eldre bygg. For utfyllende informasjon om risikoklasser og brannklasser, se brannkonsult.no.' } },
+        { '@type': 'Question', name: 'Trenger vi befaring for prosjektet vårt?', acceptedAnswer: { '@type': 'Answer', text: 'For de fleste prosjekter klarer vi oss med digitale tegninger og kartdata. For eldre bygg uten eksisterende tegninger kan befaring være nødvendig. Vi avklarer dette tidlig.' } },
+        { '@type': 'Question', name: 'Jobber dere med arkitekter og ansvarlig søker?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Vi kobles inn som ansvarlig prosjekterende for brann og koordinerer med ARK og RIB gjennom prosjektet. Ta gjerne kontakt tidlig i prosessen.' } },
+        { '@type': 'Question', name: 'Hva er forskjellen på brannkonsept og brannprosjektering?', acceptedAnswer: { '@type': 'Answer', text: 'Brannkonseptet er det overordnede strategidokumentet. Brannprosjektering er det samlede fagområdet — inkludert konsept, tegninger, notater og ansvarsrett. I praksis brukes begrepene ofte om hverandre.' } },
       ],
     },
   ],
@@ -57,23 +57,23 @@ const pageJsonLd = {
 const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
     question: 'Hva koster brannprosjektering i Trondheim?',
-    answer: 'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris — ingen overraskelser på fakturaen.',
+    answer: 'Et brannkonsept for et tilbygg eller bruksendring i tiltaksklasse 2 starter fra 15 000 kr ekskl. mva., inkludert branntekniske tegninger. Vi gir alltid fastpris i skriftlig tilbud.',
   },
   {
     question: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?',
-    answer: <>Ja, de fleste søknadspliktige tiltak krever brannprosjektering. Dette gjelder tilbygg, bruksendring, ny boenhet og rehabilitering av eldre bygg. En grundigere forklaring av <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">risikoklasser og brannklasser i norsk byggeregelverk</a> finner du på brannkonsult.no.</>,
+    answer: <>Ja, de aller fleste søknadspliktige tiltak krever brannprosjektering — tilbygg, bruksendring, ny selvstendig boenhet og rehabilitering av eldre bygg. Er du usikker, ta kontakt så avklarer vi det. En grundigere forklaring av <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">risikoklasser og brannklasser i norsk byggeregelverk</a> finner du på brannkonsult.no.</>,
   },
   {
-    question: 'Er befaring nødvendig?',
-    answer: 'For nybygg og enklere tilbygg er det som regel ikke nødvendig med befaring. Digitale tegninger og kartdata er ofte tilstrekkelig grunnlag.',
+    question: 'Trenger vi befaring for prosjektet vårt?',
+    answer: 'For de fleste prosjekter klarer vi oss med digitale tegninger og kartdata. For eldre bygg uten eksisterende tegninger, eller ved kompliserte plantegninger, kan befaring være nødvendig. Vi avklarer dette tidlig.',
   },
   {
-    question: 'Tilbyr dere håndverkertjenester?',
-    answer: 'Nei — vi er en nøytral rådgiver og selger ingen produkter. Dette gjør at vi kan gi deg råd som faktisk er i din interesse.',
+    question: 'Jobber dere med arkitekter og ansvarlig søker?',
+    answer: 'Ja, det er slik de fleste oppdrag er organisert. Vi kobles inn som ansvarlig prosjekterende for brann og koordinerer med ARK og RIB gjennom prosjektet. Ta gjerne kontakt tidlig i prosessen.',
   },
   {
-    question: 'Hva trenger dere for å gi pristilbud?',
-    answer: 'Vi trenger adresse, plantegninger og en kort beskrivelse av prosjektet. Send oss disse via kontaktskjemaet, så svarer vi med fastpris innen 24 timer.',
+    question: 'Hva er forskjellen på brannkonsept og brannprosjektering?',
+    answer: 'Brannkonseptet er det overordnede strategidokumentet som fastsetter brannsikkerhetsstrategien. Brannprosjektering er det samlede fagområdet — inkludert konsept, tegninger, notater og ansvarsrett. I praksis brukes begrepene ofte om hverandre.',
   },
 ]
 
@@ -101,20 +101,20 @@ export default function BrannprosjekteringPage() {
       <section className="py-16 lg:py-24 bg-brand-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-5">Når er det behov for brannprosjektering?</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-5">Hvilke prosjekter krever brannprosjektering?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-5">
-              Brannprosjektering kreves ved de fleste søknadspliktige tiltak etter plan- og bygningsloven. Det gjelder blant annet:
+              Brannprosjektering er påkrevd for de aller fleste søknadspliktige tiltak etter plan- og bygningsloven. I Trondheim ser vi særlig mange saker knyttet til:
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                'Tilbygg og påbygg',
-                'Ny boenhet i eksisterende bygg',
-                'Bruksendring',
-                'Rehabilitering av eldre bygg',
+                'Tilbygg og påbygg på enebolig',
+                'Ny selvstendig boenhet (hybel/sekundærleilighet)',
+                'Bruksendring — f.eks. næring til bolig',
+                'Rehabilitering av eldre bygårder',
                 'Nybygg — enebolig til leilighetsbygg',
-                'Garasjer og uthus i tiltaksklasse 2',
-                'Næringsbygg og offentlige bygg',
-                'Sammenbygging av boliger',
+                'Sammenslåing eller oppdeling av leiligheter',
+                'Næringsbygg og kombinasjonsbygg',
+                'Konvertering av næringsareal til bolig',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle size={18} className="text-brand-orange mt-0.5 shrink-0" />
@@ -158,24 +158,24 @@ export default function BrannprosjekteringPage() {
 
           <ScrollReveal>
             <div className="border-t border-brand-orange/30 pt-10">
-              <h2 className="text-brand-black text-2xl font-black mb-5">Start tidlig — spar penger</h2>
+              <h2 className="text-brand-black text-2xl font-black mb-5">Trondheim har mye eldre bygningsmasse</h2>
               <p className="text-brand-darkgray leading-relaxed mb-4">
-                Jo tidligere i prosjektet vi kobles inn, desto enklere er det å finne gode og kostnadseffektive løsninger. Brannkrav som oppdages sent i prosessen kan medføre dyre omprosjekteringer.
+                En stor del av byggessakene vi jobber med i Trondheim gjelder nettopp eldre bygg — trebygninger fra tidlig 1900-tall i Møllenberg og Lademoen, bygårder i Midtbyen, og borettslag fra 1960- og 70-tallet i Saupstad, Nardo og på Heimdal. Disse krever alltid en gjennomtenkt brannsikkerhetsstrategi.
               </p>
               <p className="text-brand-darkgray leading-relaxed">
-                Vi anbefaler å kontakte oss allerede i skissefasen, slik at branntekniske hensyn kan legges inn fra start. Vi samarbeider gjerne med arkitekter og ansvarlig søker gjennom hele prosjektet — i Trondheim, Stjørdal, Malvik, Melhus og resten av Trøndelag.
+                Vi anbefaler å ta kontakt allerede i skissefasen. Det er langt enklere å tilpasse planløsning og konstruksjonsvalg tidlig enn å måtte omprosjektere fordi brannkravene dukker opp som en overraskelse mot slutten.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal>
             <div className="border-t border-brand-orange/30 pt-10">
-              <h2 className="text-brand-black text-2xl font-black mb-5">Hva vi trenger fra deg</h2>
+              <h2 className="text-brand-black text-2xl font-black mb-5">Det trenger vi fra deg</h2>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {[
-                  { step: '01', title: 'Adresse', desc: 'Bygg- og gårdsadressen i Trondheim eller Trøndelag.' },
-                  { step: '02', title: 'Tegninger', desc: 'Plan- og snittegninger. Digitalt (PDF) er tilstrekkelig.' },
-                  { step: '03', title: 'Prosjektbeskrivelse', desc: 'Hva skal du bygge, endre eller bruke bygget til?' },
+                  { step: '01', title: 'Adresse', desc: 'Gårds- og bruksnummer eller adresse i Trondheim eller Trøndelag.' },
+                  { step: '02', title: 'Tegninger', desc: 'Plan- og snittegninger i PDF. Foreløpige tegninger er nok for et prisestimat.' },
+                  { step: '03', title: 'Prosjektbeskrivelse', desc: 'Hva er tiltaket? Tilbygg, bruksendring, ny boenhet? Jo mer du forteller, desto mer presis fastpris gir vi.' },
                 ].map((item) => (
                   <div key={item.step} className="flex flex-col items-start gap-3">
                     <div className="w-10 h-10 rounded-full bg-brand-orange flex items-center justify-center text-brand-white font-black text-sm shrink-0">{item.step}</div>

@@ -44,10 +44,10 @@ const pageJsonLd = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'Hva er forskjellen på branntilsyn og branninspeksjon?', acceptedAnswer: { '@type': 'Answer', text: 'Branntilsyn utføres av kommunens brann- og redningsetat og er et lovpålagt tilsyn. Branninspeksjon er en frivillig gjennomgang utført av en privat brannrådgiver — som oss — der vi kartlegger hele byggets brannsikkerhet og gir deg en helhetlig tilstandsrapport.' } },
-        { '@type': 'Question', name: 'Hvem er ansvarlig for brannsikkerheten i et sameie?', acceptedAnswer: { '@type': 'Answer', text: 'Eier av bygget — typisk et borettslag eller sameie — er ansvarlig for at brannsikkerheten er i orden. Styret har plikt til å følge opp pålegg fra brannvesenet. Les mer om eiers plikter og rettigheter ved branntilsyn og pålegg på brannkonsult.no.' } },
-        { '@type': 'Question', name: 'Hva skjer hvis bygget ikke oppfyller kravene?', acceptedAnswer: { '@type': 'Answer', text: 'Brannvesenet kan gi pålegg om utbedring med frist. I alvorlige tilfeller kan bygget stenges. Vi hjelper deg med å prioritere tiltakene og finne kostnadseffektive løsninger.' } },
-        { '@type': 'Question', name: 'Hva koster en branninspeksjon i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og kompleksitet. Kontakt oss for et uforpliktende tilbud — vi gir alltid fastpris.' } },
-        { '@type': 'Question', name: 'Gjelder oppgraderingskravet for alle eldre bygninger?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, alle eksisterende bygg skal oppgraderes til et brannsikkerhetsnivå tilsvarende det som gjaldt ved BF85 (Byggeforskrift 1985) eller bedre. Eldre bygg som ikke er oppgradert kan motta pålegg.' } },
+        { '@type': 'Question', name: 'Hvem er ansvarlig for brannsikkerheten i et borettslag eller sameie?', acceptedAnswer: { '@type': 'Answer', text: 'Styret er ansvarlig for fellesarealene — trappeoppganger, kjellere, loft, garasjer og tekniske rom. Den enkelte andelseier har ansvar for sin egen boenhet. Les mer om eiers plikter og rettigheter ved branntilsyn og pålegg på brannkonsult.no.' } },
+        { '@type': 'Question', name: 'Hva skjer om vi ikke følger opp et pålegg fra TBRT?', acceptedAnswer: { '@type': 'Answer', text: 'Brannvesenet setter en frist for utbedring. Følges ikke fristen, kan de gi tvangsmulkt eller i ytterste konsekvens stenge deler av bygget. Vi hjelper deg med å forstå hva som faktisk kreves og sette opp en realistisk plan.' } },
+        { '@type': 'Question', name: 'Hva koster en branninspeksjon i Trondheim?', acceptedAnswer: { '@type': 'Answer', text: 'Prisen avhenger av byggets størrelse og antall brannobjekter som skal gjennomgås. Vi gir alltid fastpris — kontakt oss med adresse og bygningstype, så svarer vi med et konkret tilbud.' } },
+        { '@type': 'Question', name: 'Kan vi bestille inspeksjon uten å ha fått pålegg?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, og det er ofte lurt. Mange styrer og næringsbygg-eiere bruker branninspeksjon som en proaktiv sjekk — for å avdekke avvik før brannvesenet gjør det og for å dokumentere at brannsikkerheten er ivaretatt.' } },
       ],
     },
   ],
@@ -59,20 +59,20 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
     answer: 'Branntilsyn utføres av kommunens brann- og redningsetat og er et lovpålagt tilsyn. Branninspeksjon er en frivillig gjennomgang utført av en privat brannrådgiver — som oss — der vi kartlegger hele byggets brannsikkerhet og gir deg en helhetlig tilstandsrapport.',
   },
   {
-    question: 'Hvem er ansvarlig for brannsikkerheten i et sameie?',
-    answer: <>Eier av bygget — typisk et borettslag eller sameie — er ansvarlig for at brannsikkerheten er i orden. Styret har plikt til å følge opp pålegg fra brannvesenet. Les mer om <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">eiers plikter og rettigheter ved branntilsyn og pålegg</a> på brannkonsult.no.</>,
+    question: 'Hvem er ansvarlig for brannsikkerheten i et borettslag eller sameie?',
+    answer: <>Styret er ansvarlig for fellesarealene — trappeoppganger, kjellere, loft, garasjer og tekniske rom. Den enkelte andelseier har ansvar for sin egen boenhet. Mange styrer i Trondheim oppdager først ved tilsyn at de mangler nødvendig dokumentasjon og rutiner. Les mer om <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">eiers plikter og rettigheter ved branntilsyn og pålegg</a> på brannkonsult.no.</>,
   },
   {
-    question: 'Hva skjer hvis bygget ikke oppfyller kravene?',
-    answer: 'Brannvesenet kan gi pålegg om utbedring med frist. I alvorlige tilfeller kan bygget stenges. Vi hjelper deg med å prioritere tiltakene og finne kostnadseffektive løsninger.',
+    question: 'Hva skjer om vi ikke følger opp et pålegg fra TBRT?',
+    answer: 'Brannvesenet setter en frist for utbedring. Følges ikke fristen, kan de gi tvangsmulkt eller i ytterste konsekvens stenge deler av bygget. Vi hjelper deg med å forstå hva som faktisk kreves og sette opp en realistisk plan.',
   },
   {
     question: 'Hva koster en branninspeksjon i Trondheim?',
-    answer: 'Prisen avhenger av byggets størrelse og kompleksitet. Kontakt oss for et uforpliktende tilbud — vi gir alltid fastpris.',
+    answer: 'Prisen avhenger av byggets størrelse og antall brannobjekter som skal gjennomgås. Vi gir alltid fastpris — kontakt oss med adresse og bygningstype, så svarer vi med et konkret tilbud.',
   },
   {
-    question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
-    answer: 'Ja, alle eksisterende bygg skal oppgraderes til et brannsikkerhetsnivå tilsvarende det som gjaldt ved BF85 (Byggeforskrift 1985) eller bedre. Eldre bygg som ikke er oppgradert kan motta pålegg.',
+    question: 'Kan vi bestille inspeksjon uten å ha fått pålegg?',
+    answer: 'Ja, og det er ofte lurt. Mange styrer og næringsbygg-eiere bruker branninspeksjon som en proaktiv sjekk — for å avdekke avvik før brannvesenet gjør det og for å dokumentere at brannsikkerheten er ivaretatt.',
   },
 ]
 
@@ -100,12 +100,12 @@ export default function BranninspeksjonPage() {
       <section className="py-16 lg:py-24 bg-brand-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-5">Hva gjør brann- og redningsetaten?</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-5">Branntilsyn i Trondheim — hva skjer egentlig?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Trondheim brann- og redningstjeneste (TBRT) gjennomfører tilsyn med særskilte brannobjekter — typisk næringsbygg, hoteller, sykehus og leilighetsbygg med mer enn 8 enheter. Tilsynet er stikkprøvebasert og gir ingen fullstendig gjennomgang av alle brannsikkerhetstiltak.
+              Trondheim brann- og redningstjeneste (TBRT) fører tilsyn med det de kaller særskilte brannobjekter — leilighetsbygg over en viss størrelse, næringsbygg, hoteller og institusjoner. Tilsynet er stikkprøvebasert: de besøker et utvalg bygg og ser etter åpenbare avvik, men det er ikke en fullstendig teknisk gjennomgang.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
-              Dersom tilsynet avdekker avvik, vil du motta et pålegg om utbedring. Det er eier av bygget som er ansvarlig for å følge opp pålegget.
+              Får du et pålegg etter tilsynet, er det du som eier som er ansvarlig for å dokumentere at avvikene blir utbedret innen fristen. Det kan være utfordrende å navigere alene — særlig når det gjelder å forstå hva som faktisk kreves og hva som er tilstrekkelig dokumentasjon.
             </p>
           </ScrollReveal>
 
@@ -120,16 +120,16 @@ export default function BranninspeksjonPage() {
 
           <ScrollReveal>
             <div className="border-t border-brand-orange/30 pt-10">
-              <h2 className="text-brand-black text-2xl font-black mb-5">Vår branninspeksjonstjeneste</h2>
+              <h2 className="text-brand-black text-2xl font-black mb-5">Slik gjennomfører vi branninspeksjon</h2>
               <p className="text-brand-darkgray leading-relaxed mb-6">
-                Vi tilbyr en grundig gjennomgang av byggets brannsikkerhet — uavhengig av om du har fått pålegg eller ønsker en frivillig sjekk. Slik gjennomfører vi en branninspeksjon:
+                Vi tilbyr en selvstendig gjennomgang av bygget — uavhengig av om du har fått pålegg eller bare vil vite hva som faktisk er statusen. Slik ser prosessen ut:
               </p>
               <div className="space-y-6">
                 {[
-                  { step: '01', title: 'Inspeksjon', desc: 'Vi gjennomgår bygget fysisk og vurderer alle branntekniske tiltak: rømningsveier, slokkeutstyr, branndører, røykvarslere, vedlikehold.' },
-                  { step: '02', title: 'Tilstandsrapport', desc: 'Vi utarbeider en skriftlig rapport som beskriver avvik og mangler, rangert etter alvorlighetsgrad.' },
-                  { step: '03', title: 'Handlingsplan', desc: 'Vi foreslår konkrete tiltak med prioritering og estimerte kostnader.' },
-                  { step: '04', title: 'Internkontrollrutiner', desc: 'Vi hjelper deg med å etablere gode rutiner for løpende brannsikkerhet.' },
+                  { step: '01', title: 'Befaring', desc: 'Vi går gjennom bygget systematisk: rømningsveier, branndører, slokkeutstyr, røykvarslere og tekniske installasjoner.' },
+                  { step: '02', title: 'Tilstandsrapport', desc: 'Du får en skriftlig rapport med alle avvik beskrevet og rangert etter alvorlighetsgrad — fra kritisk til bør utbedres.' },
+                  { step: '03', title: 'Handlingsplan', desc: 'Vi setter opp en prioritert plan med konkrete tiltak og realistiske kostnadsanslag.' },
+                  { step: '04', title: 'Dokumentasjon til kommunen', desc: 'Trenger du å svare på et pålegg fra TBRT, hjelper vi deg med dokumentasjonen som kreves.' },
                 ].map((item) => (
                   <div key={item.step} className="flex gap-6 items-start">
                     <div className="shrink-0 w-12 h-12 rounded-full bg-brand-orange flex items-center justify-center text-brand-white font-black text-sm">{item.step}</div>
@@ -159,9 +159,9 @@ export default function BranninspeksjonPage() {
 
           <ScrollReveal>
             <div className="border-t border-brand-orange/30 pt-10 bg-brand-lightgray rounded-[20px] p-8">
-              <h2 className="text-brand-black text-xl font-black mb-3">Oppgraderingskravet for eldre bygg</h2>
+              <h2 className="text-brand-black text-xl font-black mb-3">Eldre bygg i Trondheim — særlig sårbare</h2>
               <p className="text-brand-darkgray leading-relaxed">
-                Alle eksisterende bygg i Norge skal oppgraderes slik at brannsikkerheten minst tilsvarer kravene i Byggeforskrift 1985 (BF85). Bygg som ble oppført etter eldre forskrifter uten å bli oppgradert, vil typisk motta pålegg ved tilsyn. Vi vurderer byggets nåværende sikkerhetsnivå og hva som må til for å nå kravet.
+                Trondheim har en stor andel eldre trebygninger — særlig i områder som Møllenberg, Lademoen og Rosenborg. Disse er vakre, men stiller krav: eksisterende bygg skal i henhold til brann- og eksplosjonsvernloven oppgraderes til et brannsikkerhetsnivå tilsvarende Byggeforskrift 1985 (BF85). Mange eldre bygg er ikke der ennå. Vi vurderer hva som faktisk kreves og hjelper deg med en realistisk plan for å komme dit.
               </p>
             </div>
           </ScrollReveal>
