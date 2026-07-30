@@ -204,7 +204,7 @@ export default function HomePage() {
           <ScrollReveal className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
             {[
               { number: '2013', label: 'Etablert', desc: 'Over ti år med erfaring' },
-              { number: '1200+', label: 'Prosjekter', desc: 'Fra garasjer til leilighetsbygg' },
+              { number: '1400+', label: 'Prosjekter', desc: 'Fra garasjer til leilighetsbygg' },
               { number: 'TKL 1+2', label: 'Sentralt godkjent', desc: 'DiBK-godkjent kompetanse' },
             ].map((stat, i) => (
               <div key={i} className="bg-brand-white/5 border border-brand-white/10 rounded-[20px] p-8">
