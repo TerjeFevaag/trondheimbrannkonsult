@@ -77,29 +77,30 @@ const services = [
 
 const reviews = [
   {
-    quote: 'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Måtte endre noe i rapporten pga ny planløsning. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
-    author: 'Vegard Hals',
+    quote: 'På spørsmål om brannkonsept og ansvarsrett for fagområdet fikk vi raskt og profesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
+    author: 'Sivilarkitekt Sverre Krefting',
   },
   {
-    quote: 'Brannkonsult AS er faglig dyktige, ryddige og løsningsorienterte. Det er viktig for oss som arkitekter og for våre kunder.',
-    author: 'Jon Cederbrand Arkitektur AS',
+    quote: 'Godt fornøyd med bistanden — kjapp og konstruktiv, samt at det er foretatt en god balanse mellom krav og praktiske løsninger.',
+    author: 'Øyvind Hamre',
   },
   {
-    quote: 'Ga rask tilbakemelding ved første kontakt. Leverte til avtalt tid og pris. Høy kvalitet på arbeidet. Veldig behjelpelig med å svare på andre spørsmål i ettertid, vederlagsfritt.',
-    author: 'Jonathan Steinsvik',
+    quote: 'Thomas har ekspertise og gir en trygghet. Han forstod behovet vårt og har dekket det på en effektiv måte. Veldig fornøyd!',
+    author: 'Ibrahim Temel',
   },
   {
-    quote: 'Trondheim Brannkonsult er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet.',
-    author: 'Hagelin Byggservice',
-    company: 'Daniel Hagelin',
+    quote: 'Meget fornøyd med responsen, kvaliteten og oppfølgingen. Anbefales!',
+    author: 'Bjørn Eriksen',
+    company: 'Innherred Håndverkstjenester AS',
   },
   {
-    quote: 'Svært god service. Trygt med folk som kan faget sitt. Fikk svært god hjelp og mange gode tips og innspill under byggeprosessen.',
-    author: 'Torger Vistnes',
+    quote: 'Meget god kommunikasjon og rask levering. Nøyaktig det jeg hadde håpa på.',
+    author: 'Karen Marie Berg',
   },
   {
-    quote: 'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Veldig fornøyd!',
-    author: 'Heidi Spinnangr',
+    quote: 'Ryddig og effektiv. Forklarte essensen i det ganske avanserte dokumentet på en enkel og forståelig måte.',
+    author: 'Bjørn Erik Dørstad',
+    company: 'Eir Eiendom AS',
   },
 ]
 
