@@ -81,12 +81,13 @@ const reviews = [
     author: 'Sivilarkitekt Sverre Krefting',
   },
   {
-    quote: 'Godt fornøyd med bistanden — kjapp og konstruktiv, samt at det er foretatt en god balanse mellom krav og praktiske løsninger.',
-    author: 'Øyvind Hamre',
+    quote: 'Leverte helt i henhold til plan, og hadde god kommunikasjon hele veien.',
+    author: 'Eskil Wilhelmsen',
   },
   {
-    quote: 'Thomas har ekspertise og gir en trygghet. Han forstod behovet vårt og har dekket det på en effektiv måte. Veldig fornøyd!',
-    author: 'Ibrahim Temel',
+    quote: 'Veldig hyggelig og løsningsorientert. Tar seg tid til spørsmål og ønske om endringer.',
+    author: 'Pål E. Grepperud',
+    company: 'Grepperud Boligutvikling AS',
   },
   {
     quote: 'Meget fornøyd med responsen, kvaliteten og oppfølgingen. Anbefales!',
@@ -94,8 +95,8 @@ const reviews = [
     company: 'Innherred Håndverkstjenester AS',
   },
   {
-    quote: 'Meget god kommunikasjon og rask levering. Nøyaktig det jeg hadde håpa på.',
-    author: 'Karen Marie Berg',
+    quote: 'Veldig fornøyd! Høy kompetanse. Rask og profesjonell effektuering av oppdraget og konkurransedyktige priser.',
+    author: 'Lene Solli',
   },
   {
     quote: 'Ryddig og effektiv. Forklarte essensen i det ganske avanserte dokumentet på en enkel og forståelig måte.',
