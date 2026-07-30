@@ -81,13 +81,12 @@ const reviews = [
     author: 'Sivilarkitekt Sverre Krefting',
   },
   {
-    quote: 'Leverte helt i henhold til plan, og hadde god kommunikasjon hele veien.',
-    author: 'Eskil Wilhelmsen',
+    quote: 'Fornøyd med oppdraget. Rask og effektiv utførelse.',
+    author: 'Stian Skarsbø Solheim',
   },
   {
-    quote: 'Veldig hyggelig og løsningsorientert. Tar seg tid til spørsmål og ønske om endringer.',
-    author: 'Pål E. Grepperud',
-    company: 'Grepperud Boligutvikling AS',
+    quote: 'Veldig fornøyd! God kommunikasjon og raskt og grundig utført.',
+    author: 'Ole Magnus Øverland',
   },
   {
     quote: 'Meget fornøyd med responsen, kvaliteten og oppfølgingen. Anbefales!',
