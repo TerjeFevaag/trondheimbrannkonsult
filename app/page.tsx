@@ -77,11 +77,11 @@ const services = [
 
 const reviews = [
   {
-    quote: 'På spørsmål om brannkonsept og ansvarsrett for fagområdet fikk vi raskt og profesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
+    quote: 'På spørsmål om brannkonsept og ansvarsrett for fagområdet fikk vi raskt og proffesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
     author: 'Sivilarkitekt Sverre Krefting',
   },
   {
-    quote: 'Fornøyd med oppdraget. Rask og effektiv utførelse.',
+    quote: 'Fornøyd med oppdraget. Rask og effektiv utførsel.',
     author: 'Stian Skarsbø Solheim',
   },
   {
@@ -99,8 +99,7 @@ const reviews = [
   },
   {
     quote: 'Ryddig og effektiv. Forklarte essensen i det ganske avanserte dokumentet på en enkel og forståelig måte.',
-    author: 'Bjørn Erik Dørstad',
-    company: 'Eir Eiendom AS',
+    author: 'Stine Aas',
   },
 ]
 
