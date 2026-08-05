@@ -77,8 +77,9 @@ const services = [
 
 const reviews = [
   {
-    quote: 'På spørsmål om brannkonsept og ansvarsrett for fagområdet fikk vi raskt og proffesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
-    author: 'Sivilarkitekt Sverre Krefting',
+    quote: 'Raskt og effektivt. Svarer opp på oppfølgingsspørsmål.',
+    author: 'Kristina Nordås',
+    company: 'Byggtek Nord AS',
   },
   {
     quote: 'Fornøyd med oppdraget. Rask og effektiv utførsel.',
